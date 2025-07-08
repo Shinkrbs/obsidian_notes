@@ -22,7 +22,7 @@ After hitting the enter key, you can check by using the **dir** command if the f
 
 Tags: #VSCode
 
-Surprisingly you can launch your project in vs code using the command line! with a simple line you can access a project or a single file using these commanss.
+Surprisingly you can launch your project in vs code using the command line! with a simple line you can access a project or a single file using these commands.
 
 ```command line
 code . // To access all the files in the current directory
