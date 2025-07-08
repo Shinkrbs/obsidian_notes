@@ -1,4 +1,4 @@
-Tags: #Codingtechniques
+Tags: #Codingtechniques #Techniques 
 
 ## Collection of coding techniques found from different sources.
 

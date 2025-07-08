@@ -32,7 +32,7 @@ Tags: #ServerResponse #Servers #HTTP
 * Server error response (500-599)
 
 Click [HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status) for status codes. 
-Click [HTTP Request Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods) to access basic HTTP request methods
+Click [HTTP Request Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods) to access basic HTTP request methods.
 
 ---
 # Web Development 
