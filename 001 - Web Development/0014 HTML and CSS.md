@@ -10,7 +10,6 @@ A collection of notes about HTML and CSS.
 JavaScript: makes the website more interactive and engaging for users.
 
 ---
-
 # Elements and Tags in HTML
 
 Tags: #Elements #Tags 
@@ -29,3 +28,6 @@ A full paragraph element looks like this.
 An element can be considered as a container for content. The opening and closing tags tell the browser what content the element contains.
 
 [HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
+
+***ALWAYS USE PROPER TAGS***
+
