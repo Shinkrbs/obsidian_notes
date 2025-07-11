@@ -110,3 +110,25 @@ Tags: #List #OrderedList #UnorderedList
 ***Take note the the li tag is the list item***
 
 ---
+
+# Anchor Elements in HTML
+
+Tags: #Links #Anchor
+
+An anchor element is defined by wrapping the text or another HTML element we want to be a link using the a tag.
+
+```html
+<a> About our Page </a>
+```
+
+## HTML Attribute
+
+This is used to tell the anchor where is the destination to go to when it is clicked.  It is always in the opening tag. 
+
+```html
+<a href = "thisisalink.com"> The Odin Project </a>
+```
+
+---
+
+# Opening Links in a New Tab in HTML 
