@@ -81,3 +81,28 @@ Example of siblings:
 ```
 
 Indentation is used to make the level of nesting clear and readable for ourselves and other developers.
+
+---
+# Ordered and Unordered List in HTML
+
+Tags: #List #OrderedList #UnorderedList
+
+**Unordered List** are used to make a list where order doesn't matter.
+
+```html
+<ul>
+	<li>Saging</li>
+	<li>Manga</li>
+	<li>Bayabas</li>
+</ul>
+```
+
+**Ordered List** are used to make a list where the order matter.
+
+```html
+<!-- List about waking up -->
+<ol>
+	<li>Go to Bed</li>
+	<li>Wake Up</li>
+</ol>
+```
