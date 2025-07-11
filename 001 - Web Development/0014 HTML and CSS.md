@@ -133,7 +133,7 @@ This is used to tell the anchor where is the destination to go to when it is cli
 
 # Rel Attribute in Anchor Tags in HTML
 
-Tags: #Rel
+Tags: #Rel #Anchor
 
 Used to define the relationship between the current document and the lined resource. Commonly used in anchor tags, link tags, and area tags.
 
@@ -147,3 +147,9 @@ Used to define the relationship between the current document and the lined resou
 <a href = "somelink.com" target = "-blank" rel = "noopener noreferrer">Click This</a>
 ```
 
+---
+# Absolute and Relative Links in HTML
+
+Tags: #AbsoluteLinks #RelativeLinks #Links 
+
+Generally, there are two links used in a website, Absolute and Relative links. 
