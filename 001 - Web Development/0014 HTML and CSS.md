@@ -53,3 +53,31 @@ Meta information in HTML is defined by the meta tag, which provides metadata abo
 
 **Metadata** is data about data and is used by browsers, search engines, and other web services to understand and process the content of the webpage.
 
+---
+# Nesting and Indentation in HTML
+
+Tags: #Nesting #Indentation
+
+Indent any elements that are within other elements. When an element is nested with other elements, a parent and a child relationship is created between the elements. The nested elements are the children and the element they are nested within is the parent.
+
+```html
+<head></head>
+<body>
+	<p>Just some text</p>
+</body>
+```
+
+In the code above the body element is the parent and the paragraph is the child.
+
+HTML parents can have many children. Elements at the same level of nesting are considered to be siblings.
+
+Example of siblings:
+```html
+<head></head>
+<body>
+	<p>The first child of body tag</p>
+	<p>Another paragraph that is a sibling of the first paragraph.</p>
+</body>
+```
+
+Indentation is used to make the level of nesting clear and readable for ourselves and other developers.
