@@ -130,3 +130,20 @@ This is used to tell the anchor where is the destination to go to when it is cli
 ```
 
 ---
+
+# Rel Attribute in Anchor Tags in HTML
+
+Tags: #Rel
+
+Used to define the relationship between the current document and the lined resource. Commonly used in anchor tags, link tags, and area tags.
+
+**Rel Attributes in anchor tags common values:**
+- noopener: Prevents new new page from accessing the window.opener property improving security.
+- noreferrer: Prevents the browser from sending the HTTP referrer header
+- nofollow: Tells search engines not to follow link
+- external: Indicates the link leads to an external resource
+
+```html
+<a href = "somelink.com" target = "-blank" rel = "noopener noreferrer">Click This</a>
+```
+
