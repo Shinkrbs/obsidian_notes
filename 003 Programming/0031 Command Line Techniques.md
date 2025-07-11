@@ -28,3 +28,12 @@ Surprisingly you can launch your project in vs code using the command line! with
 code . // To access all the files in the current directory
 code filenameHere // To access a certain file
 ```
+
+---
+# HTML Shortcut Keys
+
+Tags: #HTML #HTMLShortcutKey 
+
+**Comments**: CTRL + /
+**Doctype**: ! + Tab
+**Dummy Text**: lorem + Enter
