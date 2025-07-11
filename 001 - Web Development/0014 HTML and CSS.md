@@ -45,3 +45,11 @@ Example:
 ```
 
 ---
+# Meta Information in HTML
+
+Tags: #MetaInformation
+
+Meta information in HTML is defined by the meta tag, which provides metadata about the HTML document. 
+
+**Metadata** is data about data and is used by browsers, search engines, and other web services to understand and process the content of the webpage.
+
