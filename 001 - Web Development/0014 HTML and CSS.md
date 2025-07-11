@@ -31,3 +31,17 @@ An element can be considered as a container for content. The opening and closing
 
 ***ALWAYS USE PROPER TAGS***
 
+---
+# Void Elements in HTML
+
+Tags: #Void
+
+HTML elements that does not have a closing tag.  These elements just have a single tag. They are known as void elements because they are void of any content, there is nothing inside of them, No closing tag means can't wrap content like other tags do.
+
+Example:
+```html
+<br   />
+<img  />
+```
+
+---
