@@ -1,0 +1,14 @@
+Module 3:
+
+1. Two vectors in Rn are equal if and only if their corresponding components are equal. - True
+2. The vector −v is the additive identity of v. - False
+3.  To subtract two vectors in Rn, subtract their  corresponding components. - True
+4. The zero vector 0 in Rn is the additive inverse of a vector. - True
+5.  A vector space consists of four entities: a set of  vectors, a set of scalars, and two operations. - True
+6. The set of all integers with the standard operations is a vector space. - False
+7. The set of all ordered triples (x, y, z) of real  numbers, where y ≥ 0, with the standard operations on R3 is a vector space. - False ( Don't satisfy closure under scalar multiplication)
+8.  To show that a set is not a vector space, it is sufficient to show that just one axiom is not  satisfied. - True
+9.  The set of all first-degree polynomials with the  standard operations is a vector space. - False
+10. The set of all pairs of real numbers of the form (0, y), with the standard operations on R2, is a  vector space. - True
+11.  A set of vectors S = {v1, v2, .  .  . , vk} in a vector space is linearly dependent when the vector equation c1v1 + c2v2 + .  .  . + ckvk = 0 has only the trivial solution. - False
+12.  The set S = {(1, 0, 0, 0), (0, −1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1)} spans R4 - True
