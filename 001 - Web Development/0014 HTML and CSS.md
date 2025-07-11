@@ -97,7 +97,7 @@ Tags: #List #OrderedList #UnorderedList
 </ul>
 ```
 
-**Ordered List** are used to make a list where the order matter.
+**Ordered List** are used to make a list where the order matters.
 
 ```html
 <!-- List about waking up -->
@@ -106,3 +106,7 @@ Tags: #List #OrderedList #UnorderedList
 	<li>Wake Up</li>
 </ol>
 ```
+
+***Take note the the li tag is the list item***
+
+---
