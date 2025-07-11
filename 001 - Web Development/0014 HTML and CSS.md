@@ -130,5 +130,3 @@ This is used to tell the anchor where is the destination to go to when it is cli
 ```
 
 ---
-
-# Opening Links in a New Tab in HTML 
