@@ -147,9 +147,15 @@ Used to define the relationship between the current document and the lined resou
 <a href = "somelink.com" target = "-blank" rel = "noopener noreferrer">Click This</a>
 ```
 
+**NOTE: noopener and noreferrer are added for security reasons and is always recommended that the two are always paired.**
+
 ---
 # Absolute and Relative Links in HTML
 
 Tags: #AbsoluteLinks #RelativeLinks #Links 
 
 Generally, there are two links used in a website, Absolute and Relative links. 
+
+**Absolute Links:** links to pages on other websites on the internet. A typical absolute link will be made up of the following parts: **scheme://domain/path**.
+
+**Relative Links:** Links to other pages within own website. It does not include the domain name, since it is another page on the same site.  It only includes the file path to the other page, relative to the page the link being created on. 
