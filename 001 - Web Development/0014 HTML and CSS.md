@@ -115,7 +115,7 @@ Tags: #List #OrderedList #UnorderedList
 
 Tags: #Links #Anchor
 
-An anchor element is defined by wrapping the text or another HTML element we want to be a link using the a tag.
+An anchor element is defined by wrapping the text or another HTML element we want to be a link using the a tag. The anchor element is one of the void elements in HTML.
 
 ```html
 <a> About our Page </a>
@@ -159,3 +159,16 @@ Generally, there are two links used in a website, Absolute and Relative links.
 **Absolute Links:** links to pages on other websites on the internet. A typical absolute link will be made up of the following parts: **scheme://domain/path**.
 
 **Relative Links:** Links to other pages within own website. It does not include the domain name, since it is another page on the same site.  It only includes the file path to the other page, relative to the page the link being created on. 
+
+---
+# Images in HTML
+
+Tags: #Images #Links 
+
+To display an image in HTML the image element is used. The image element is considered one of the void elements. 
+
+**Example:**
+```html
+<img src = "some/location/in/the/code/base">
+```
+
