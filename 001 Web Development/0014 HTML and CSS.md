@@ -383,7 +383,19 @@ Chaining more than one type of selector is not possible since an element can't b
 
 **Chaining selectors is efficient when you want to target a specific element with a specific design**
 
+---
+# Combinators
+
+Tags: #Combinator 
+
+**Combinators** allows combining multiple sectors differently than either grouping or chaining them, as they show a relationship between the selectors. 
+
+**Targets Elements based on relationships (parent -> child ->sibling etc.)**
 ## Descendant Combinator
 
-Tags: #DescendantCombinator #Relationship
+Tags: #DescendantCombinator #Relationship 
+
+Represented by a single space between selectors. This combinator will only cause elements that math the last selector to be selected if they also have an ancestor (parent, grandparent, etc.) that matches the previous selector.
+
+
 
