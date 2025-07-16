@@ -330,4 +330,60 @@ Use this if two groups of elements share the same style declarations. Example:
 }
 ```
 
-This selector is used to minimize repetition of code fore more readabilty.
+This selector is used to minimize repetition of code fore more readability.
+
+## Chaining Selectors
+
+Tags: #Chaining
+
+Chaining selectors as a list without any separation. For example we have:
+
+```html
+<div>
+	<div class="subsection header">Latest Posts</div>
+	<p class="subsection preview">This is where a preview for a post might go.</p>
+</div>
+```
+
+There are two elements with the **subsection** class that have some sort of unique styles. Their are also a space containing another class name. We can chain both the class selectors together in the CSS style sheet.
+
+```css
+.subsection.header {
+	color: red;
+}
+
+/*When you want to edit the classes with the subsection class name*/
+.subsection {
+	color: white;
+}
+```
+
+**Chain a class and an ID**
+```html
+<div>
+	<div class="subsection header">Latest Posts</div>
+	<p class="subsection" id="preview">
+		This is where a preview for a post might go.
+	</p>
+</div>
+```
+
+You can chain them by:
+```css
+.subsection.header {
+  color: red;
+}
+
+.subsection#preview {
+  color: blue;
+}
+```
+
+Chaining more than one type of selector is not possible since an element can't be two different types at once. Example, chaining two types of selectors like div and p would render the result divp, which would not work since their is no divp element.
+
+**Chaining selectors is efficient when you want to target a specific element with a specific design**
+
+## Descendant Combinator
+
+Tags: #DescendantCombinator #Relationship
+
