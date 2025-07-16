@@ -236,3 +236,27 @@ div {
 ```
 
 The example above results to all with div elements in the index will have a color of red and those elements/tags that are not div will remain as is (int the example it was the paragraph tag).
+
+## Class Selectors
+
+Tags: #Class
+
+ This selector will select all elements with the given class. Example:
+
+```html
+<!-- index.html -->
+<div = "sample_class"> 
+	<h1> </h1>
+</div>
+```
+
+```css
+/* styles.css */
+.sample_class {
+	color:red;
+}
+```
+
+***Syntax for class selectors:**
+	A period immediately followed by the case-sensitive value of the class attribute.  Classes aren't required to be specific to a particular element, so multiple use of the same class to many elements can be done.
+
