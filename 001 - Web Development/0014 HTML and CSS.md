@@ -172,3 +172,67 @@ To display an image in HTML the image element is used. The image element is cons
 <img src = "some/location/in/the/code/base">
 ```
 
+---
+# Basic Syntax in CSS
+
+Tags: #CSS #CSSSyntax
+
+***Graphical representation of basic CSS syntax:***
+
+![[Pasted image 20250716122749.jpg]]
+
+
+---
+# The DIV Element in HTML
+
+Tags: #Div
+
+The div is one of the basic HTML elements. It is an empty container. It is used to define a division or a section in an HTML document. It is a block-level element that is commonly used as a container for other HTML elements, which can then be styled with CSS or manipulated with [[0011 JavaScript]].
+
+```html
+<div class = "example">
+	<!-- Some Tags and elements here -->
+	<h1> Header </h1>
+</div>
+```
+
+---
+# Selectors in CSS
+
+Tags: #Selectors
+
+Selectors refer to the HTML elements to which CSS rules apply; they're what is actually being "selected" for each rule. 
+
+## Universal Selector
+
+The universal selector will select elements of every type (meaning the whole document).  Example:
+
+```css
+/* Adding the color purple throughout the design*/
+* {
+	color: purple; 
+}
+```
+
+## Type Selectors
+
+Tags: #Type
+
+A type selector (can also be called as element selector) will select all elements of the given element type. Example:
+
+```html
+<!-- index.html -->
+<div> Hello World! </div>
+<div> Just another div in the page</div>
+<p> This is a paragraph </p>
+<div> This is another another div in the page</div>
+```
+
+```css
+/* styles.css */
+div {
+	color: red;
+}
+```
+
+The example above results to all with div elements in the index will have a color of red and those elements/tags that are not div will remain as is (int the example it was the paragraph tag).
