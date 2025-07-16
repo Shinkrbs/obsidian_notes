@@ -260,3 +260,35 @@ Tags: #Class
 ***Syntax for class selectors:**
 	A period immediately followed by the case-sensitive value of the class attribute.  Classes aren't required to be specific to a particular element, so multiple use of the same class to many elements can be done.
 
+**Adding multiple classes to a single element as a space-separated list.***
+
+```html
+<div class="alert-text severe-alert"> Some values here </div>
+```
+
+## ID Selectors
+
+Tags: #ID 
+
+ID selectors are similar to class selectors. Select an element with the given ID, which is another attribute you place on an HTML element. 
+
+The difference is that an element can only have **one** ID whereas it can have multiple class names. Example:
+
+``` html
+<!-- index.html -->
+<div id="data"> Some data and elements here </div>
+```
+
+```css
+#title {
+	background-color: red;
+}
+```
+
+### When Should You Use ID and/or Class?
+
+Tags: #Class  #ID #WhenToUseClassandID
+
+Best Practices:
+- Use **ID**s for unique elements like navigation bars, headers, or specific JavaScript targets.
+- Use **Classes** for styling and grouping multiple elements to maintain flexibility and scalability in the codebase.
