@@ -292,3 +292,42 @@ Tags: #Class  #ID #WhenToUseClassandID
 Best Practices:
 - Use **ID**s for unique elements like navigation bars, headers, or specific JavaScript targets.
 - Use **Classes** for styling and grouping multiple elements to maintain flexibility and scalability in the codebase.
+
+## The Grouping Selector
+
+Tags: #Grouping
+
+Use this if two groups of elements share the same style declarations. Example:
+
+``` css
+/* Instead of doing this */
+
+.read {
+	color: white;
+	background-color: black;
+}
+
+.unread {
+	color: white;
+	background-color: black;
+}
+
+/* Do this */
+
+.read, .unread {
+	color: white;
+	background-color: black;
+}
+
+/* If they have unique declarations to them, we can add this*/
+
+.read {
+	/* Unique Declarations here*/
+}
+
+.unread {
+	/* Unique Declarations here*/
+}
+```
+
+This selector is used to minimize repetition of code fore more readabilty.
