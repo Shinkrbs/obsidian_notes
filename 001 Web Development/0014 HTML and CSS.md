@@ -395,7 +395,5 @@ Tags: #Combinator
 
 Tags: #DescendantCombinator #Relationship 
 
-Represented by a single space between selectors. This combinator will only cause elements that math the last selector to be selected if they also have an ancestor (parent, grandparent, etc.) that matches the previous selector.
-
-
+Represented by a single space between selectors. This combinator will only cause elements that match the last selector to be selected if they also have an ancestor (parent, grandparent, etc.) that matches the previous selector.
 
