@@ -461,3 +461,35 @@ If a browser cannot find or does not support the first font in a list, it will u
 **text-align** will align text horizontally within an element, and can use the common keywords such as center, left, right.
 
 ## image height and width
+
+Tags: #Images 
+
+By default, an image element's height and width values will be the same as the actual image file's height and width. If there is a need to adjust the size of the image without causing it to lose its proportions, the use of value **auto** for the height property is needed and adjust the width value.
+
+```css
+img {
+	height: auto;
+	width: 400px;
+}
+```
+
+Example:
+
+```html
+<!-- Image here -->
+
+<div class="image_placeholder">
+	<h1>This is an Image</h1>
+	<div class="image">
+		<img src="banner.jpg" alt="banner">
+	</div>
+</div>
+```
+
+```css
+.image_placeholder .image img {
+	height: auto;
+	width: 700px;
+	border: 3px solid darkred;
+}
+```
