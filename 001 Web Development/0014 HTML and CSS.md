@@ -397,3 +397,26 @@ Tags: #DescendantCombinator #Relationship
 
 Represented by a single space between selectors. This combinator will only cause elements that match the last selector to be selected if they also have an ancestor (parent, grandparent, etc.) that matches the previous selector.
 
+```html
+<div class="ancestor">
+	<!-- Some information of ancestor here -->
+	<div class="contents">
+		<!-- Some information of contents here -->
+		<div class="sibling_conten">
+			<!-- Some information of sibling content here -->
+		</div>
+	</div>
+</div>
+
+<div class="solo">
+	<!-- Some information of solo div here -->
+</div>
+```
+
+```css
+.ancestor.contents {
+	/*Some designs here
+	All children of contents will be 
+	edited here*/
+}
+```
