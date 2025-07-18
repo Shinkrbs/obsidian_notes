@@ -493,3 +493,34 @@ Example:
 	border: 3px solid darkred;
 }
 ```
+
+---
+# Adding CSS to HTML
+
+Tags: #CSS #HTML #AddingCSStoHTML
+
+```html
+<!-- index.html -->
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+```
+
+```css
+/* styles.css */
+div {
+  color: white;
+  background-color: black;
+}
+
+p {
+  color: red;
+}
+```
+
+***Why?***
+
+1. It keeps the HTML and CSS separated, which results in the HTML file being smaller and making things look cleaner.
+2.  CSS can and will be edited in one place, which is especially handy for websites with many pages that all share similar styles.
+
+---
