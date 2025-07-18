@@ -549,3 +549,7 @@ All the rules are placed inside of a pair of opening and closing head tags of th
 This method can be useful for adding unique styles to a single page of a website, but is really not recommended since the HTML file will get very big and can affect readability in the long run.
 
 ---
+# Inline CSS
+
+Tags: #CSS #InlineCSS 
+
