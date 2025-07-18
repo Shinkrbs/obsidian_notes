@@ -420,3 +420,35 @@ Represented by a single space between selectors. This combinator will only cause
 	edited here*/
 }
 ```
+
+---
+# Basic Properties to Get Started with CSS
+
+Tags: #CSS #Styles
+
+## color and background-color
+
+The color property sets an element's text color, while background-color sets the background color of an element.
+
+**Example:**
+```css
+p {
+  /* hex example: */
+  color: #1100ff;
+}
+
+p {
+  /* rgb example: */
+  color: rgb(100, 0, 127);
+}
+
+p {
+  /* hsl example: */
+  
+}
+```
+
+## typography basics and text-align
+
+Tags: #Typography #Texts
+
