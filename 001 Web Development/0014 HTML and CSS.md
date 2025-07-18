@@ -553,3 +553,17 @@ This method can be useful for adding unique styles to a single page of a website
 
 Tags: #CSS #InlineCSS 
 
+Makes it possible to add styles directly to HTML elements.
+
+```html
+<body>
+  <div style="color: white; 
+	  background-color: black;">
+	  /* Some elements here*/
+  </div>
+</body>
+```
+
+This is recommended when a **unique style** is added for a single element. 
+
+---
