@@ -524,3 +524,28 @@ p {
 2.  CSS can and will be edited in one place, which is especially handy for websites with many pages that all share similar styles.
 
 ---
+# Internal CSS
+
+Tags: #CSS #InternalCSS
+
+Internal CSS **(embedded CSS)** involves adding the CSS within the HTML file itself instead of creating a completely separate file. 
+
+All the rules are placed inside of a pair of opening and closing head tags of the HTML file. 
+
+```css
+<head>
+	<style>
+		div {
+			color: red;
+			background-color: yellowgreen;
+		}
+		p {
+			color: white;
+		}
+	</style>
+</head>
+```
+
+This method can be useful for adding unique styles to a single page of a website, but is really not recommended since the HTML file will get very big and can affect readability in the long run.
+
+---
