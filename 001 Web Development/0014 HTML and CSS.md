@@ -452,3 +452,12 @@ p {
 
 Tags: #Typography #Texts
 
+**font-family** can be a single value or a comma-separated list of values that determine what font an element uses.
+
+If a browser cannot find or does not support the first font in a list, it will use the next one, then the next one and so on. Therefore, it is best practice to include a list of values for this property, **starting with the most important font and ending with a generic font.**
+
+**font-size** will change the size of the fonts. **font-weight** affects the boldness of the text, assuming the font supports the specified weight.
+
+**text-align** will align text horizontally within an element, and can use the common keywords such as center, left, right.
+
+## image height and width
