@@ -646,3 +646,7 @@ In the example above, despite rule 2 having more class selectors than ID selecto
 In the final example above, the first rule uses an ID selector, while the second rule combines an ID selector with a class selector. Therefore, neither rule is using a more specific selector than the other. The cascade then checks the number of each selector type. Both rules have only one ID selector, but rule has a class selector in addition to the ID selector, so rule 2 has a higher specificity.
 
 While the *color: red;* declaration would take precedence, the *background-color: yellow;* declaration would still be applied since there's no conflicting declaration to it.
+
+**Not Everything adds to specificity**
+When comparing selectors, we may come across symbols for the universal selector (\*) as well as combinators (+, -, >, and an empty space). These symbols do not add any specificity in and of themselves.
+
