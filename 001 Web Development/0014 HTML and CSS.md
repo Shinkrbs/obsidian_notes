@@ -567,3 +567,82 @@ Makes it possible to add styles directly to HTML elements.
 This is recommended when a **unique style** is added for a single element. 
 
 ---
+# The Cascade of CSS
+
+Tags: #Cascade
+
+The cascade determines which rules get applied to the HTML. 
+
+## Specificity
+
+Tags: #Specificity
+
+A CSS declaration that is more specific will take precedence over less specific ones.
+Specificity will only be taken into account when an element has multiple, conflicting declarations targeting it, sort of like a tie-breaker. 
+
+1. An *ID selector* will always **beat any** *number of class selectors*
+2. A *class selector* will **beat any** number of *type selectors*
+3. A *type selector* will beat always **beat any** number of less specific selectors
+
+```html
+<!-- index.html -->
+<div class="main">
+  <div class="list subsection">Red text</div>
+</div>
+```
+```css
+/* rule 1 */
+.subsection {
+  color: blue;
+}
+
+/* rule 2 */
+.main .list {
+  color: red;
+}
+```
+
+In the example above, both rules are using only class selectors, but rule 2 is more specific because it is using more class selectors, so the *color: red;* declaration would take the precedence.
+
+```html
+<!-- index.html -->
+<div class="main">
+  <div class="list" id="subsection">Blue text</div>
+</div>
+```
+```css
+/* rule 1 */
+#subsection {
+  color: blue;
+}
+
+/* rule 2 */
+.main .list {
+  color: red;
+}
+```
+
+In the example above, despite rule 2 having more class selectors than ID selectors, rule 1 is more specific because ID beats class. In this case, the *color: blue;* declaration would take precedence.
+
+```html
+<!-- index.html -->
+<div class="main">
+  <div class="list" id="subsection">Red text on yellow background</div>
+</div>
+```
+```css
+/* rule 1 */
+#subsection {
+  background-color: yellow;
+  color: blue;
+}
+
+/* rule 2 */
+.main #subsection {
+ color: red;
+}
+```
+
+In the final example above, the first rule uses an ID selector, while the second rule combines an ID selector with a class selector. Therefore, neither rule is using a more specific selector than the other. The cascade then checks the number of each selector type. Both rules have only one ID selector, but rule has a class selector in addition to the ID selector, so rule 2 has a higher specificity.
+
+While the *color: red;* declaration would take precedence, the *background-color: yellow;* declaration would still be applied since there's no conflicting declaration to it.
