@@ -696,4 +696,11 @@ For an element that has both the **alert** and **warning** lasses, the cascade w
 
 ---
 
+# Inspecting in HTML and CSS
+
+Tags: #Inspect #HTML #CSS 
+
+[Inspect in HTML and CSS](https://www.theodinproject.com/lessons/foundations-inspecting-html-and-css)
+
+---
 
