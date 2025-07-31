@@ -694,3 +694,6 @@ The final factor, the end of the line, the tie-breaker of the tie-breakers. **Wh
 
 For an element that has both the **alert** and **warning** lasses, the cascade would run through every other factor, including inheritance (none here) and specificity (neither rule is more specific than the other). Since the **.warning** rule was the last one defined, and no other factor was able to determine which rule to apply, it's one that gets applied to the element.
 
+---
+
+
