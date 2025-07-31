@@ -698,9 +698,43 @@ For an element that has both the **alert** and **warning** lasses, the cascade w
 
 # Inspecting in HTML and CSS
 
-Tags: #Inspect #HTML #CSS 
+Tags: #Inspect #HTML #CSS #BoxBorder
 
 [Inspect in HTML and CSS](https://www.theodinproject.com/lessons/foundations-inspecting-html-and-css)
 
 ---
+# The Box Model
 
+Tags: #TheBoxModel #Box #Padding #Margin #Border
+
+Involves positioning and layout in CSS. How to make sure elements are just the right size with **margin**, **padding**, and **borders**.
+
+Every single thing on a web page is a rectangular box. These boxes can have other boxes in them and can sit alongside one another. You can view this boxes by applying outlines to every element on the page.
+
+```css
+* {
+	outline: 2px solid red;
+}
+```
+
+There are many ways to manipulate the size of these boxes, and the space between them, using **padding**, **margin**, and **border**. 
+
+- **Padding** increases the space between the border of a box and the content of the box. Used when the background of the box needs to be bigger in size compared to the content of the box. Space out an element from itself.
+- **Border** adds space (even it it's only pixel or two) between the margin and the padding. 
+- **Margin** increases the space between the borders of a box and the borders of adjacent boxes. If you want to space out two elements from each other. 
+
+![[Dropped Image.png]]
+
+**box-sizing**, the height and width accounts for the padding and the margin or the border of the element.
+
+```css
+* {
+	height: 100px;
+	width: 100px;
+	box-sizing: border-box;
+}
+```
+
+[CSS Box Model Guide](https://www.youtube.com/watch?v=rIO5326FgPE)
+
+---
