@@ -650,3 +650,34 @@ While the *color: red;* declaration would take precedence, the *background-color
 **Not Everything adds to specificity**
 When comparing selectors, we may come across symbols for the universal selector (\*) as well as combinators (+, -, >, and an empty space). These symbols do not add any specificity in and of themselves.
 
+## Inheritance
+
+Tags: #Inheritance #InheritanceInCSS 
+
+Refers to certain CSS properties that, when applied to an element, are inherited by that element's descendants, even if we don't explicitly write a rule for those descendants. 
+
+```html
+<!-- index.html -->
+<div id="parent">
+  <div class="child"></div>
+</div>
+```
+```css
+/* styles.css */
+#parent {
+  color: red;
+}
+
+.child {
+  color: blue;
+}
+```
+
+Despite the **parent** element having a higher specificity with an ID, the **child** element would have the **color: blue;** style applied since that declaration directly targets it, while **color: red;** from the parent is only inherited.
+
+## Rule Order
+
+Tags: #RuleOrder
+
+
+
