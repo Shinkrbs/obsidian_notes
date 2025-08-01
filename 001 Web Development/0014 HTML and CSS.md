@@ -725,6 +725,14 @@ There are many ways to manipulate the size of these boxes, and the space between
 
 ![[Dropped Image.png]]
 
+**Center Margin**
+
+```css
+.content {
+margin: 0 auto;
+}
+```
+
 **box-sizing**, the height and width accounts for the padding and the margin or the border of the element.
 
 ```css
@@ -750,6 +758,13 @@ CSS has two box types: **block** and **inline** boxes, which determine element b
 
 **Inline Elements**, do not start on a new line. They appear in line with whatever elements they are placed beside. A clear example of an inline element is a link tag. If you stack one of these in the middle of a paragraph of text, the link will behave like a part of the paragraph. Additionally, **padding** and **margin** behave differently on inline elements. In general ***do not want to try to put extra padding or margin on inline elements***.
 
+**Block Content**
+
+```css
+.content {
+display: block;
+}
+```
 ## The Middle Ground Inline-Block
 
 Inline-Block elements ***behave like inline elements***, but with block-style padding and margin. 
@@ -761,3 +776,5 @@ Inline-Block elements ***behave like inline elements***, but with block-style pa
 **Div** is a block-level element by default. It is commonly used as a container element to group other elements. It allow us to ***divide*** the page into different blocks and apply styling to those blocks.
 
 **Span** is an inline-element by default. It can be used to group text content and inline HTML elements for styling and should only be used when no other semantic HTML element is appropriate.
+
+[CSS Layout](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Introduction)
