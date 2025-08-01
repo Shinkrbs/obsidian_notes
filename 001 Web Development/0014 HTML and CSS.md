@@ -738,3 +738,26 @@ There are many ways to manipulate the size of these boxes, and the space between
 [CSS Box Model Guide](https://www.youtube.com/watch?v=rIO5326FgPE)
 
 ---
+# Box and Inline
+
+Tags: #Box #InlineCSS #Inline #MiddleGroundInline-Block #Div #Span
+
+CSS has two box types: **block** and **inline** boxes, which determine element behavior and interaction. The **display** property controls how HTML elements appear on the web page.
+
+## Block vs. Inline
+
+**Block Elements** will appear on the page stacked atop each other, each new element starting on a new line.
+
+**Inline Elements**, do not start on a new line. They appear in line with whatever elements they are placed beside. A clear example of an inline element is a link tag. If you stack one of these in the middle of a paragraph of text, the link will behave like a part of the paragraph. Additionally, **padding** and **margin** behave differently on inline elements. In general ***do not want to try to put extra padding or margin on inline elements***.
+
+## The Middle Ground Inline-Block
+
+Inline-Block elements ***behave like inline elements***, but with block-style padding and margin. 
+
+### Divs and Spans
+
+**Divs** and **Spans** are generic boxes that can contain anything. 
+
+**Div** is a block-level element by default. It is commonly used as a container element to group other elements. It allow us to ***divide*** the page into different blocks and apply styling to those blocks.
+
+**Span** is an inline-element by default. It can be used to group text content and inline HTML elements for styling and should only be used when no other semantic HTML element is appropriate.
