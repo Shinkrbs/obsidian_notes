@@ -778,3 +778,11 @@ Inline-Block elements ***behave like inline elements***, but with block-style pa
 **Span** is an inline-element by default. It can be used to group text content and inline HTML elements for styling and should only be used when no other semantic HTML element is appropriate.
 
 [CSS Layout](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Introduction)
+
+---
+# CSS Fonts
+
+Tags: #Fonts #CSSFonts
+
+[CSS Fonts](https://www.w3schools.com/Css/css_font.asp)
+[CSS Web Safe Fonts](https://www.w3schools.com/cssref/css_websafe_fonts.php)
