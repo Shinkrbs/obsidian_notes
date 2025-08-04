@@ -786,3 +786,34 @@ Tags: #Fonts #CSSFonts
 
 [CSS Fonts](https://www.w3schools.com/Css/css_font.asp)
 [CSS Web Safe Fonts](https://www.w3schools.com/cssref/css_websafe_fonts.php)
+
+---
+# Flexbox
+
+Tags: #Flexbox
+
+A way to arrange items into **rows and columns**. This items will flex based on some rules defined. It is short for the **Flexible Box Layout Module**. Makes it easier to design flexible responsive layout structure, without using float or positioning. 
+
+```css
+<div class="flex-container">
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>
+</div>
+```
+
+## Flex Containers and Flex Items
+
+A flexbox consists of two elements, the **flex container** and the **flex items**. A **flex container** is any element that has **display: flex** on it. A **flex item** is any element that lives directly inside of a flex container.
+
+![[Dropped Image (2).png]]
+
+Any element can be both a **flex container** and a **flex item**. Meaning, a **display: flex;** on a flex item and then use flexbox to arrange its **children**.
+
+![[Dropped Image (3).png]]
+
+Creating and nesting multiple flex containers and items is the primary way to building up complex layouts. 
+
+![[Dropped Image (4).png]]
+
+[Modern Designs the Use FlexBox](https://internetingishard.netlify.app/html-and-css/flexbox/index.html)
