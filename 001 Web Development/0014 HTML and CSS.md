@@ -817,3 +817,7 @@ Creating and nesting multiple flex containers and items is the primary way to bu
 ![[Dropped Image (4).png]]
 
 [Modern Designs the Use FlexBox](https://internetingishard.netlify.app/html-and-css/flexbox/index.html)
+
+---
+
+Try YAOS if working in new device
