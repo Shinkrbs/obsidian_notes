@@ -75,8 +75,7 @@ export default ListGroup;
 ---
 # React Basic Information
 
-Tags: #Components
-
+Tags: #Components #Props #State
 ## Components
 
 A component is just a javaScript function that returns **JSX**. JSX looks like HTML  but it runs inside javaScript.
@@ -106,6 +105,52 @@ export const Person = (props: PersonProp) => {
 			<p>Name: {props.name}</p>
 			<p>Age: {props.age}</p>
 			<p>Marital Status: {props.isMarried ? "Married" : "Single"}</p> 
+		</div>
+	);
+};
+
+// Usage
+function App() {
+	return (
+		<>
+			<Person name={"Pedro"} age={22} isMarried={false} />{" "}
+			<Person name={"Collin"} age={19} isMarried={true} />{" "}
+		</>
+	);
+}
+
+export default App;
+```
+
+## State
+
+If the component needs to remember things like clicks, toggles, inputs, that is where state is the best paradigm to use.
+
+React gives a built in hook called **useState**, useState gives a component a memory. It stores value and updates it whenever needed. When the state changes react re-renders just that component.
+
+```typescript
+export interface PersonProp{
+	name: string;
+	age: number;
+	isMarried: boolean;
+}
+
+export const Person = (props: PersonProp) => {
+	const [showInfo, setShowInfo] = useSate<boolean>(false);
+	
+	const toggleInfo = () => {
+		setShowInfo((prev) => !prev);
+	};
+
+	return (
+		<div>
+			{showInfo && (
+				<p>Name: {props.name}</p>
+				<p>Age: {props.age}</p>
+				<p>Marital Status: {props.isMarried ? "Married" : "Single"}</p>
+			)}
+
+			<button onClick(toggleInfo)>Toggle Info</button>
 		</div>
 	);
 };
