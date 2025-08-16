@@ -817,3 +817,41 @@ Creating and nesting multiple flex containers and items is the primary way to bu
 ![[Dropped Image (4).png]]
 
 [Modern Designs the Use FlexBox](https://internetingishard.netlify.app/html-and-css/flexbox/index.html)
+
+---
+# Growing and Shrinking
+
+Tags: #Flex #FlexShorthand #Shorthand #FlexGrow 
+
+## The Flex Shorthand
+
+the flex declaration is a shorthand for 3 properties that one can set on a flex item. These properties affect how flex items size themselves within their container. 
+
+***Shorthand properties are CSS properties that let you set the values of multiple other CSS properties simultaneously. Using shorthand property, you can write more concise stylesheets, saving time and energy.***
+
+In this case, **flex** is a shorthand for **flex-grow**, **flex-shrink**, and **flex-basis**.
+
+``` css
+div {
+	flex: 1;
+}
+```
+
+In the above example, **flex: 1;** equates to: **flex-grow: 1;, flex-shrink: 1;, flex-basis: 0;**.
+
+## Flex-grow
+
+**flex-grow** expects a single number as its value, and that number is used as the flex-item's "growth factor". 
+
+## Flex-shrink
+
+**flex-shrink** is similar to **flex-grow**, but sets the "shrink factor" of a flex item. flex-shrink only ends up being applied if the **size of all flex items is larger than their parent container**. 
+
+**When you specify flex-grow or flex-shrink, flex items do not necessarily respect your given values for width. **
+
+## Flex-basis
+
+**flex-basis** sets the initial size of a flex item, so any sort of flex-growing or flex-shrinking starts from that baseline size.  The shorthand value defaults to flex-basis: 0%;
+
+***There is a difference between the default value of flex-basis and the way the flex shorthand defines it if no flex-basis is given. The actual default value for flex-basis is auto, but when you specify flex: 1; on an element, it interprets that as flex: 1 1 0. If you want to only adjust an item's flex-grow you can do so directly, without the shorthand. Or you can be more verbose and use the full 3 value shorthand flex: 1 1 auto;, which is also equivalent to using flex: auto;.***
+
