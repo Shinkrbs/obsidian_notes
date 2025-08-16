@@ -881,4 +881,27 @@ No matter which direction you're using, you need to think of your flex-container
 ---
 # Alignment
 
-Tags: #Alignment 
+Tags: #Alignment #JustifyContent #AlignItems #Gap 
+
+**Flex is also very useful for arranging items that have specific size.**
+
+## Justify-Content
+
+**justify-content** aligns items across the ***main axis***. 
+
+## Align-Items
+
+To change the placement of items along the **cross axis** use **align-items**. 
+
+**justify-content** and **align-items** are based on the main and cross axis of your container, their behavior changes when you change the flex-direction of a flex-container. For example, when you change flex-direction to column, justify-content aligns vertically and align-items aligns horizontally. 
+
+## Gap
+
+Setting **gap** on a flex container adds specified space between flex items, similar to adding a margin to the items. 
+
+```css
+.container {
+	gap: 8px; /* Adds 8px gaps to each item  inside the container*/
+}
+```
+
