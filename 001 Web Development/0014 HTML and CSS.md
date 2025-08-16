@@ -861,3 +861,24 @@ In the above example, **flex: 1;** equates to: **flex-grow: 1;, flex-shrink: 1;,
 
 [More Information about Flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex).
 
+---
+# Axes
+
+Tags: #Axes #FlexDirection #FlexBoxCheatSheet
+
+The most confusing thing about flexbox is that it can work either horizontally or vertically, and some rules change a bit depending on which direction you are working with. The default direction for a flex container is horizontal, or row, but you can change the direction to vertical, or column. The direction can be specified in CSS like so:
+
+```css
+.flex-container {
+	flex-direction: column;
+}
+```
+
+No matter which direction you're using, you need to think of your flex-containers as having **2 axes**: the **main axis** and the  **cross axis**. It is the direction of these aces that changes when the flex-direction is changed. In most circumstances, flex-direction: row puts the main axis horizontal (left-to-right), and column puts the main axis vertical (top-to-bottom).
+
+[FlexBox CheatSheet](https://flexbox.malven.co/).
+
+---
+# Alignment
+
+Tags: #Alignment 
