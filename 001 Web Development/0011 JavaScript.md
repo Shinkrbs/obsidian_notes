@@ -163,5 +163,14 @@ Another way to include JavaScript in a web page is through an external script. T
 --- 
 # Node.js in Web Development
 
-Tags: #NodeJS
+Tags: #NodeJS #NodeConsole
 
+Node.js is a JavaScript runtime environment that allows you to run JavaScript outside of you web browser. 
+
+## Using Node Console
+
+Node provides an interactive console which lets you run and edit your JavaScript code right in the terminal. This is quite helpful to debug or test small snippets of code quickly without opening the browser every time.
+
+**To run the Node console, open up terminal and type node. Type .exit to quit the console.**
+
+[What is NodeJS?](https://www.youtube.com/watch?v=uVwtVBpw7RQ)
