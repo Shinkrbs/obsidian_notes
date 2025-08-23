@@ -133,3 +133,29 @@ const someVariable = (paramsOne, paramsTwo) => {
 }
 ```
 
+---
+# JavaScript With HTML and CSS
+
+Tags: #JavaScript #HTML #CSS 
+
+JavaScript in making web development helps makes the web pages interactive. This section is focused on the fundamentals of JavaScript and how it can be used to manipulate all the various interactions between the web page and the user.
+
+---
+# How to Run JavaScript Code
+
+Tags: #RunJavaScript
+
+Running JavaScript in the html file can be done using the **script** tag.
+
+```html
+<script>  
+	// JavaScript code here
+	console.log("Hello World!");
+</script>
+```
+
+Another way to include JavaScript in a web page is through an external script. This is very similar to linking external CSS docs to a website.
+
+```html
+<script src="javascript.js"> </script>
+```
