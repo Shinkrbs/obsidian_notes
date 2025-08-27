@@ -174,3 +174,56 @@ Node provides an interactive console which lets you run and edit your JavaScript
 **To run the Node console, open up terminal and type node. Type .exit to quit the console.**
 
 [What is NodeJS?](https://www.youtube.com/watch?v=uVwtVBpw7RQ)
+
+---
+# Data Types and Conditionals
+
+Tags: #DataTypes #Conditionals
+
+Data types in JavaScript are called **dynamically typed**, meaning that there exist data types, but variables are not bound to any of them.
+
+## Number
+
+The number type represents both integer and floating point numbers. Besides regular numbers, there are so-called **special numeric values** which also belong to this data type: **Infinity, -Infinity, and Nan**.
+
+**Infinity** represents mathematical infinity. It is a special value that's greater than any number. We can get it as a result of division by zero:
+
+``` javascript
+alert (1/0); //Infinity
+
+```
+
+Or just reference it directly: 
+
+```javascript
+alert (Infinity); //Infinity
+```
+
+**Nan** represents computational error. It is a result of an incorrect or an undefined mathematical operation, for instance:
+
+```javascript
+alert("not a number" / 2); //Nan
+```
+
+Nan is sticky. Any further mathematical operation on Nan returns Nan:
+
+```javascript
+alert( NaN + 1 ); // NaN
+alert( 3 * NaN ); // NaN
+alert( "not a number" / 2 - 1 ); // NaN
+```
+
+So, if there's a Nan somewhere in a mathematical expression, it propagates to the whole result (there's only one exception to that: Nan ** 0 is 1).
+
+## BigInt
+
+**BigInt** type was added to the language to represent integers of arbitrary length. A BigInt value is created by appending n to the end of an integer.
+
+```javascript
+// the "n" at the end means it's a BigInt
+const bigInt = 1234567890123456789012345678901234567890n;
+```
+
+## String
+
+
