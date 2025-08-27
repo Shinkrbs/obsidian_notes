@@ -17,3 +17,6 @@ Tags: #DataScience #Cisco
 
 **Inferred Data**: Your personal style, likes and dislikes, and behavioral habits that are inferred through your actions.
 
+***All data are meaningless by itself, but that changes once data analytics is applied to the data.***
+
+**Data Analytics**: The process of taking data from its raw state and using it to inform useful actions. Through this, organizations can use your volunteered, observed, or inferred data to provide users with personalized experience./
