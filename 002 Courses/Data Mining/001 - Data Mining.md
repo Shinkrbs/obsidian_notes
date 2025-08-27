@@ -4,6 +4,8 @@ Tags: #DataMining
 # Introduction to Data Science
 
 Tags: #DataScience #Cisco 
+
+---
 ## Where Does Data Come From?
 
 Tags: #DataAnalytics #VolunteeredData #ObservedData #InferredData
@@ -24,4 +26,15 @@ Tags: #DataAnalytics #VolunteeredData #ObservedData #InferredData
 
 **Data Analytics**: The process of taking data from its raw state and using it to inform useful actions. Through this, organizations can use your volunteered, observed, or inferred data to provide users with personalized experience.
 
+--- 
 ## Data Usage in Daily Life
+
+Tags: #InformedDecision #IdentifyImprovements #GreaterVisibility #TrackPredictEvents
+
+**Make Informed Decisions**: From the product recommendations that we see on our shopping sites to performance statistics on athletes, to which groceries to stock in the market, our decisions are influenced by the results of data science and AI.
+
+**Identify Improvements to Processes and Products**:  Through the ability to use data collected from product reviews and ratings, manufactures can modify designs, or change their processes to produce and deliver better products to their consumers.
+
+**Enable Greater Visibility into Customer Behaviors**: This visibility enables managers to ensure that the right products are available for their customers in the shortest time possible.
+
+**Track and Predict Events**: The ability to track, isolate, and even predict events. A network engineer can use a dashboard to isolate areas of slowdown and immediately react to ensure it doesn't cause problems for users. Climate analysts can accurately predict the impacts of weather on all aspects of our economies. Self-driving cars can recognize hazards and take actions to avoid accidents. Enabling greater visibility into behaviors.
