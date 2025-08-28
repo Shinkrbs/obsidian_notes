@@ -113,4 +113,25 @@ All pieces of data have a feature called **data type** that tells applications h
 5. Boolean
 
 ---
-## Variety of Data
+
+## Structured vs Unstructured Data
+
+Tags: #StructuredData #UnstructuredData
+
+In order to process, store, and analyze all of these different types of data, it is important to think about whether they are structured data or unstructured data.
+
+**Structured Data**: makes up about 10%-20% of generated data and has clearly defined data types and patterns that make them easily stored and organized into columns and rows. This organization makes structured data easy to search and analyze. Sources of structured data include sales records, airline reservation systems, and inventory control. Structured data is usually stored in relational databases such as SQL databases or in spreadsheets such as Excel.
+
+**Unstructured Data**: makes up most data that is generated, about 80% and cannot be organized into rows and columns. This makes unstructured data difficult to search, manage, and analyze. Sources of unstructured data include images, PDFs, sensor data, and social media posts. Unstructured data is usually stored in a non-relational database also known as NoSQL Database.
+
+***Structured data is organized, like an address book, with specific fields such as name and phone number in a table format. Unstructured data is messy and free-form, like an email or a video, with no fixed structure or pre-defined schema.***
+
+Structured data is comprised of defined data types and is highly organized with easily searchable patterns. Relational databases, spreadsheets, sales transactions, and credit card numbers are all examples of structured data. 
+
+Unstructured data is not structured through a predefined data model or schema. It is usually qualitative data and best managed in non-relational (NoSQL) databases. Email messages, social media posts, and surveillance videos are all examples of unstructured data.
+
+---
+## Selecting Relevant Data
+
+Tags: #RelevantData
+
