@@ -38,3 +38,10 @@ Tags: #InformedDecision #IdentifyImprovements #GreaterVisibility #TrackPredictEv
 **Enable Greater Visibility into Customer Behaviors**: This visibility enables managers to ensure that the right products are available for their customers in the shortest time possible.
 
 **Track and Predict Events**: The ability to track, isolate, and even predict events. A network engineer can use a dashboard to isolate areas of slowdown and immediately react to ensure it doesn't cause problems for users. Climate analysts can accurately predict the impacts of weather on all aspects of our economies. Self-driving cars can recognize hazards and take actions to avoid accidents. Enabling greater visibility into behaviors.
+
+---
+## The Importance of Visualization
+
+Tags: 
+
+**Visualizations**: A way to display data in a manner that is easily understood. 
