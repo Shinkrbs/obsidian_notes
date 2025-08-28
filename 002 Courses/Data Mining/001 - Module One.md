@@ -85,3 +85,32 @@ The correct type of data visualization can intuitively present complex data. Sel
 
 Tags: #Data #Qualitative #Quantitative #Discrete #Continuous
 
+Data analysis begins with understanding the types of data you're working with. Data can first be defined as **quantitative or qualitative**. 
+
+**Qualitative Data**: is descriptive. It is typically represented as text, is non-numerical in nature, and is collected through surveys, questionnaires, interviews, or observations. Example: the reviews collected about various products on a shopping site.
+
+**Quantitative Data**: is numerical in nature. You are trying to quantify information.
+
+**Quantitative Data** can further be broken down into **discrete** and **continuous** data. 
+
+**Discrete Data**: can only take on certain values, typically whole numbers. Example: account of transactions processed in a day or the number of people who visit a website each week.
+
+**Continuous Data**: is measured and can be represented in an infinite number of ways. Example: the average distance traveled by a moving car, which constantly being updated as the car moves forward.
+
+---
+## Data Types
+
+Tags:  #String #Integer #FloatingPoint #DateandTime #Boolean #DataTypes 
+
+All pieces of data have a feature called **data type** that tells applications how to treat it. **Operations performed** are defined by the **data type**. Data must be grouped by their given type to perform required operations. 
+
+**Data Types**:
+
+1. String
+2. Integer
+3. Floating Point
+4. Date and Time 
+5. Boolean
+
+---
+## Variety of Data
