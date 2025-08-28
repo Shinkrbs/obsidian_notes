@@ -78,3 +78,10 @@ The correct type of data visualization can intuitively present complex data. Sel
 **Pie Charts**: show parts of a whole. Each slice, or segment, of the "pie", represents a percentage of the total number. The total sum of the segments must equal 100%. A pie chart displays the different values of a given variable. 
 
 **Scatter Plot**: are very popular for correlation visualizations or when you want to show the distribution, or all possible values, of a large number of data points. Scatter plots are also useful for demonstrating clustering or identifying outliers in the data. 
+
+---
+# 1.2 Data is All Around Us
+## Discrete vs Continuous Data
+
+Tags: #Data #Qualitative #Quantitative #Discrete #Continuous
+
