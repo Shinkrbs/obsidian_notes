@@ -135,3 +135,6 @@ Unstructured data is not structured through a predefined data model or schema. I
 
 Tags: #RelevantData
 
+Select relevant data by defining the question you want to answer. Start by looking at the available data and determining which fields or measurements are relevant to your question.
+
+---
