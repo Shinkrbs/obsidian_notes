@@ -56,7 +56,7 @@ Tags: #Visualizations #Charts #Graphs
 ---
 ## Ways to Visualize Data
 
-Tags:  #LineCharts
+Tags:  #LineCharts #ColumnCharts #BarCharts #PieCharts #ScatterPlot
 
 The correct type of data visualization can intuitively present complex data. Select each type of data visualization to see its typical use cases and best practices.
 
@@ -70,3 +70,10 @@ The correct type of data visualization can intuitively present complex data. Sel
 
 **Line Charts**: one of the most commonly used charts for comparing two data sets. Use line charts when the number of data points is high, and you want to show a trend int he data over time.
 
+**Column Charts**: are positioned vertically, as shown in the figure. They are probably the most common chart type used to display the numerical value of a specific data point and compare that value across similar categories. They allow for easy comparison among several data points.
+
+**Bar Charts**: are similar to column charts, except the data is horizontally displayed. Bar charts also allow for easy comparison between several data points. The data point labels on the horizontal bar chart are on the left side and are more readable when the label contains text rather than values.
+
+**Pie Charts**: show parts of a whole. Each slice, or segment, of the "pie", represents a percentage of the total number. The total sum of the segments must equal 100%. A pie chart displays the different values of a given variable. 
+
+**Scatter Plot**: are very popular for correlation visualizations or when you want to show the distribution, or all possible values, of a large number of data points. Scatter plots are also useful for demonstrating clustering or identifying outliers in the data. 
