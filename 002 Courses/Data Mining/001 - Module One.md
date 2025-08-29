@@ -138,3 +138,87 @@ Tags: #RelevantData
 Select relevant data by defining the question you want to answer. Start by looking at the available data and determining which fields or measurements are relevant to your question.
 
 ---
+# 1.3 Business Understanding
+
+## Data Analytics for Business Insights
+
+Tags:  #DataAnalytics #BusinessInsights
+
+**Data Science** enables businesses to better understand the impact if their products and services, adjusts their methods and goals and provide the customers with better products faster.
+
+**Trend Analysis**: identifies trends in purchases.
+
+**Analytics**: can also be used to predict customer behaviors, gauge user satisfaction and even to identify patterns that can be used to train machines to perform complex functions.
+
+---
+## Social Examples
+
+Tags: #OCHA 
+
+The **United Nations Office for the Coordination of Humanitarian Affairs (OCHA)** provides information management services to the humanitarian community by gathering and sharing data. 
+
+The **Humanitarian Data Exchange (HDX)**, is a source that provides workers from the **United Nations, (UN)**, **non-governmental organizations(NGOs)**, government and universities with the tools to improve data sharing during times of crisis.
+
+**Predective Analysis**: can focus humanitarian efforts on preventive, rather than reactive, actions. 
+
+---
+## What Did I Learn in this Module?
+
+Tags: #Review
+
+### What is Data?
+
+**Data** is created through many modern daily activities.
+
+**Organizations** gather this data and apply data analytics to inform practical business applications. 
+
+**Three Main Types of Data**:
+1. Observed Data
+2. Volunteered Data
+3. Inferred Data
+
+The **correct data visualization** can intuitively present complex data patterns and trends.
+
+**Data Visualization**
+1. Line Chart
+2. Column Chart
+3. Bar Chart
+4. Pie Chart
+5. Scatter Plot
+
+The main factors to consider when choosing a visualization are:
+
+- The number of variables to be shown
+- The number of data points, or units of information, in each variable
+- Whether the data illustrates changes over time
+- The need to make comparison or correlation between different groups of data points.
+
+### Data is All Around Us
+
+**Data Analysis**: begins with understanding the types of data. 
+
+***Data is either defined as quantitative or qualitative**
+
+Quantitative Data: is divided into **discrete and continuous data**.
+
+The **data type** tell a system how to interpret the data's value, so the system can perform operations to transform and use the data in computations.
+
+Data Types include:
+
+- String
+- Integer
+- Floating Point
+- Data and Time
+- Boolean
+
+The data should be categorized as **structured** or **unstructured** before it is processed, stored, and analyzed. After data is defined and selected, it becomes relevant in determining the questions to be answered.
+
+### Business Understanding
+
+**Data Science**: enables businesses to better understand the impact of their products and services, adjust their methods and goals, and provide their customers with better products faster. 
+
+**Trend Analysis**: is one way to gain insights into key performance indicators (KPI) overtime.
+
+
+
+
