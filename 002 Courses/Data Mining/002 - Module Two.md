@@ -38,3 +38,66 @@ Characteristics of big data change how data is collected, transmitted, stored an
 
 **What is a data pipeline?** 
 
+An automated system that moves raw data from where it's needed.
+
+**Three Phases of Data Pipeline**:
+1. Ingestion
+2. Transformation
+3. Storage
+
+***ETL (Extract, Transform, and Load)***
+
+**Ingestion**: Data engineers will want to ingest two primary sources of data: **batches of data from servers or databases (Batch Ingestion) and real-time events happening in the world and streaming from the world of devices (Streaming Ingestion)**. 
+
+**Transformation**: Data always needs to be transformed to be useful for later analyses.  Two main issues: data often needs to be cleaned up from missing values, dates in wrong format, and outdated data. Also, other one is transforming data so that it's structure aligns with the system needed to allow accurate analyses.
+
+**Storage**: Data needs to be stored in places and forms, making it easy for analysts to run reports on weekly sales and data scientists to create predictive recommendation models.
+
+**Data Security**:  managing data access so that people who should be accessing the data can efficiently, and keeping out people who shouldn’t.
+
+***There are two primary locations for businesses to store their data, on-premises or in the cloud. Often, companies use a hybrid of both.***
+
+**On-Premises**: hardware on an organization’s servers and infrastructure - usually physically on site. 
+
+**Cloud Storage**: storing data on servers maintained by providers such as Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), and Alibaba Cloud.
+
+---
+# 2.3 Data Collection and Gathering Summary
+
+### Understanding Big Data
+
+**Topic Objective:** Describe big data and its potential benefits
+
+Big data is a term used to describe the massive volumes of digital data generated, collected, and processed. The **characteristics** associated with big data change how data is collected , transmitted, stored, and accessed. 
+
+***The four V's of big data are volume, variety, velocity, and veracity.***
+
+Drivers  of the increased data growth are the increase of IoT devices, internet access including broadband, the use of smartphones, and the popularity of social media.
+
+### Understanding Big Data Management
+
+**Topic Objective**: Describe data flow through pipelines
+
+![[Pasted image 20250908225454.png]]
+
+**Data Engineers** manage data through data pipelines. The data pipeline has three stages: **Ingestion, Transformation, and Storage**. These stages preclude any analysis that is to be performed. Data Engineers work with two primary sources of data: **Batch Ingestion** and **Streaming Ingestion**. 
+
+**Transformation** filters out bad data and converts the data type, if necessary, to allow for accurate calculations.
+
+Data is then **stored** in an **on-premises infrastructure, cloud storage, or both.**
+
+**Volume**: the volume of data in motion
+**Velocity**: The rate at which data is generated
+**Variety**: The data type that is not ready for processing and analysis
+**Veracity**: The amount of data cleaning that is required. It reduces the data cleaning that is required.
+
+***Order of the Stages in Data Pipeline**
+
+Ingestion -> Transformation  -> Storage -> Analysis
+
+Ingestion: Batch Ingestion, Streaming Ingestion
+Transformation: Filters out bad data and converts the data type, if necessary.
+Storage: On-Premises, Cloud, Both
+Analysis: Analyze data and make reports about it.
+
+
