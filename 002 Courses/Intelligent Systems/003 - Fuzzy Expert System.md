@@ -113,3 +113,16 @@ It is the process within a fuzzy logic system that uses fuzzy rules to map vague
 3. Defuzzyfication
 
 ---
+## Fuzzyfication
+
+* The standard (ordinary inputs) are transformed into fuzzy inputs.
+* Each ordinary (crisp) input has its own group of membership functions or sets to which they are transformed.
+* This group of membership functions exists within a universe of discourse that holds all relevant values that the crisp input can possess.
+
+### Rule Evaluation
+
+* The fuzzy sets representing the input values are compared to the conditions of each rule: IF antecedent THEN consequent
+* A fuzzy rule can have multiple antecedents joined by logical operators (AND or OR).
+* AND – intersection or minimum between the two sets.
+* OR – union or maximum between the two sets
+* NOT – opposite of the set
