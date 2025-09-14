@@ -36,3 +36,4 @@ Tags: #OperatingSystem
 * To allocate resources to processes (Manage resources).
 * Provide a pleasant and effective user interface.
 
+
