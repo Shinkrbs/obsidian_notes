@@ -63,4 +63,15 @@ Definitions:
 
 ***A fuzzy set is a way to handle concepts that are not clear-cut or "crisp." Unlike a standard set where an item is either **in** the set or **out** of it (a 1 or 0), a fuzzy set allows an item to **partially belong**.***
 
+***Equivalence (A=B)*** : Two fuzzy sets, A and B are considered identical.
+
+***Implication (A⊆B)***: Set A is a subset of set B. This means that "being in A" implies "being in B" to at least the same degree.
+
+***Complement (Aˉ)***: The negation or NOT operation. Represents everything that is not in set A.
+
+***Union (A∪B)***: The OR operation. IT combines two sets to represent elements that belong to A or B, or both.
+
+***Intersection (A∩B)***: The AND operation. It finds the common ground, representing the elements that belong to both A and B.
+
+
 
