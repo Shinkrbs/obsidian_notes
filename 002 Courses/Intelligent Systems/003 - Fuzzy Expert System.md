@@ -56,3 +56,11 @@ Definitions:
 4. Sigmoid Function
 5. Z-Function
 6. Bell Function Moratorium
+
+## Operations of Fuzzy Sets
+
+![[Pasted image 20250914214850.png]]
+
+***A fuzzy set is a way to handle concepts that are not clear-cut or "crisp." Unlike a standard set where an item is either **in** the set or **out** of it (a 1 or 0), a fuzzy set allows an item to **partially belong**.***
+
+
