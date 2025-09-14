@@ -11,6 +11,7 @@ Tags: #FuzzyExpertSystem #ExpertSystem
 
 ![[Pasted image 20250914194922.png]]
 
+--- 
 ### Applications of Fuzzy Logic
 
 1. Video Camcorder - determine best focusing and lighting when there is movement in the picture.
@@ -22,6 +23,7 @@ Tags: #FuzzyExpertSystem #ExpertSystem
 7. Hot Water Heater - adjust the heating element power according to the temperature and the quantity of water being used.
 8. Helicopter Control - determine the best operation actions by judging human instructions and the flying conditions including wind speed and direction.
 
+---
 ## Fuzzy Sets
 
 ![[Pasted image 20250914205258.png]]
@@ -40,12 +42,14 @@ Definitions:
 
 ***A fuzzy set defines a vague category by creating a function that assigns a "degree of belonging" (from 0 to 1) to every possible item.***
 
+---
 ## Membership Function
 
 ![[Pasted image 20250914211856.png]]
 
 - **μ** is the symbol used to represent the **membership function**.
 
+---
 ## Representing Fuzzy Sets
 
 ![[Pasted image 20250914212738.png]]
@@ -57,6 +61,7 @@ Definitions:
 5. Z-Function
 6. Bell Function Moratorium
 
+---
 ## Operations of Fuzzy Sets
 
 ![[Pasted image 20250914214850.png]]
@@ -73,5 +78,17 @@ Definitions:
 
 ***Intersection (A∩B)***: The AND operation. It finds the common ground, representing the elements that belong to both A and B.
 
+---
+## Fuzzy Hedges
 
+![[Pasted image 20250914225203.png]]
 
+***A hedge is a word that modifies the meaning of a fuzzy set, much like an adverb (e.g., "very," "slightly," "somewhat") modifies an adjective in everyday language. Hedges work by mathematically changing the membership function, μA​(x), of a set, making the concept it represents either stronger or weaker.***
+
+**Concentrators (Making things more specific)**: These hedges strengthen the meaning of a set, making the criteria for membership stricter. They do this by raising the membership value to a power **greater than 1**. This reduces all membership values (except 1 and 0), so only the elements with a very high original membership retain a significant value.
+
+**Example:** If a temperature has a membership of 0.8 in the set "Warm," its membership in the set "**Very** Warm" would be (0.8)2=0.64. It becomes less "warm."
+
+**Dilators (Making things less specific)**: These hedges weaken or broaden the meaning of a set, making the criteria for membership less strict. They do this by taking a root of the membership value (or raising it to a power **less than 1**). This increases most membership values, allowing more elements to be considered part of the set.
+
+**Example:** If a car has a membership of 0.3 in the set "Fast," its membership in "**Somewhat** Fast" would be sqrt(0.3)​≈0.55. Its membership has increased.
