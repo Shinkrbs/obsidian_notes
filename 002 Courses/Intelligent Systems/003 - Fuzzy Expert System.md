@@ -39,3 +39,9 @@ Definitions:
 - A score between 0 and 1 (like 0.3, 0.5, or 0.8) means it has **partial membership**. It "kind of" belongs.
 
 ***A fuzzy set defines a vague category by creating a function that assigns a "degree of belonging" (from 0 to 1) to every possible item.***
+
+## Membership Function
+
+![[Pasted image 20250914211856.png]]
+
+- **μ** is the symbol used to represent the **membership function**.
