@@ -92,3 +92,24 @@ Definitions:
 **Dilators (Making things less specific)**: These hedges weaken or broaden the meaning of a set, making the criteria for membership less strict. They do this by taking a root of the membership value (or raising it to a power **less than 1**). This increases most membership values, allowing more elements to be considered part of the set.
 
 **Example:** If a car has a membership of 0.3 in the set "Fast," its membership in "**Somewhat** Fast" would be sqrt(0.3)​≈0.55. Its membership has increased.
+
+---
+## Fuzzy Rule
+
+**Fuzzy Rules** are linguistic IF-THEN constructions that have the general form: **IF A THEN B***, where A and B are propositions containing linguistic variables.
+
+**Types of Fuzzy Rules**:
+
+1. **Fuzzy Mapping Rules***: provide a functional mapping between the input and the output using linguistic variables.
+2. **Fuzzy Implication Rules**: describes a generalized logic implication relationship between inputs and outputs.
+
+---
+## Fuzzy Inference
+
+It is the process within a fuzzy logic system that uses fuzzy rules to map vague or imprecise inputs (like how or slow) to fuzzy or crisp outputs, mimicking human reasoning. 
+
+1. Fuzzyfication
+2. Rule Evaluation
+3. Defuzzyfication
+
+---
