@@ -22,3 +22,18 @@ Tags: #FuzzyExpertSystem #ExpertSystem
 7. Hot Water Heater - adjust the heating element power according to the temperature and the quantity of water being used.
 8. Helicopter Control - determine the best operation actions by judging human instructions and the flying conditions including wind speed and direction.
 
+## Fuzzy Sets
+
+![[Pasted image 20250914205258.png]]
+
+Definitions:
+
+-  define **X** as the universe
+- Universe is the overall context or the collection of all possible things in the domain.
+- **"A fuzzy set A⊂X..."**,  A is a subset of X
+- **"...is characterized by a _membership function_ fA​(x):X→[0,1] which associates each point in X a real number in the interval [0,1]."** : The membership function is a **rule** that takes an item from the universe (X) and assigns it a "membership score" between 0 and 1.
+- Example : The input x is a specific height (eg. 5'5 or 6'2), then the function name is fA​(x). The subscript A suggests that this function belongs to the set A (set of "tall"), so it can also be written as ftall​(x). The output is a number between 0 and 1.
+- **"fA​(x) represents the grade of membership of x in A."** suggests that the output score tells how much an item belongs to the set.
+- A score of 1 means the item is a full member. It completely belongs to the set.
+- A score of 0 means the item is not a member at all.
+- A score between 0 and 1 (like 0.3, 0.5, or 0.8) means it has **partial membership**. It "kind of" belongs.
