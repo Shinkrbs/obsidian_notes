@@ -37,3 +37,5 @@ Definitions:
 - A score of 1 means the item is a full member. It completely belongs to the set.
 - A score of 0 means the item is not a member at all.
 - A score between 0 and 1 (like 0.3, 0.5, or 0.8) means it has **partial membership**. It "kind of" belongs.
+
+***A fuzzy set defines a vague category by creating a function that assigns a "degree of belonging" (from 0 to 1) to every possible item.***
