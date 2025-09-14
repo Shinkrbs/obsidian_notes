@@ -28,7 +28,7 @@ Tags: #FuzzyExpertSystem #ExpertSystem
 
 Definitions:
 
--  define **X** as the universe
+-  define **X** as the universal set
 - Universe is the overall context or the collection of all possible things in the domain.
 - **"A fuzzy set A⊂X..."**,  A is a subset of X
 - **"...is characterized by a _membership function_ fA​(x):X→[0,1] which associates each point in X a real number in the interval [0,1]."** : The membership function is a **rule** that takes an item from the universe (X) and assigns it a "membership score" between 0 and 1.
@@ -45,3 +45,14 @@ Definitions:
 ![[Pasted image 20250914211856.png]]
 
 - **μ** is the symbol used to represent the **membership function**.
+
+## Representing Fuzzy Sets
+
+![[Pasted image 20250914212738.png]]
+
+1. Singleton (single value)
+2. Triangular
+3. Trapezoidal
+4. Sigmoid Function
+5. Z-Function
+6. Bell Function Moratorium
