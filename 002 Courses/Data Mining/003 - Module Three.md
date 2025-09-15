@@ -26,6 +26,20 @@ Tags: #Entertainment #Agriculture #Medicine #Retail #Fitness
 ---
 ## 3.2 Big Data and Machine Learning
 
-Tags: #MachineLearning #BigData #ML 
+Tags: #MachineLearning #BigData #ML #MachineLearningAnalysis #Classifiers #Algorithms
 
+
+### What is Machine Learning?
+
+Traditionally, computers solve problems through programs or instructions given to them by a human. Machine Learning just means the computer can figure out a solution without being specifically programmed. These machines have the ability to continuously learn by looking at data and finding patterns, and they do this much faster than a human could. 
+
+**Two Key Terms in Machine Learning:**
+1. **Classifiers:** the workhorse of machine learning that categorize observations.
+2. **Algorithms**: are the techniques that organize and orient classifiers. 
+
+## Types of Machine Learning Analysis
+
+Machine learning is divided into three primary learning model approaches: **Supervised, Unsupervised, and Reinforcement**. 
+
+**Supervised Machine Learning** algorithms are the most commonly used for predictive analytics. It requires human interaction to label data read for accurate supervised learning. In this model, the model is taught by example using input and output data sets processed by human experts, usually data scientists. The model learns the relationships between input and output data and then uses that information to formulate predictions based on new datasets.
 
