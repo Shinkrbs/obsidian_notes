@@ -1,4 +1,4 @@
-Tags: #FuzzyExpertSystem #ExpertSystem
+Tags: #FuzzyExpertSystem #ExpertSystem #FuzzyLogic #Fuzzyfication #Defuzzyfication
 
 ## Introduction
 
