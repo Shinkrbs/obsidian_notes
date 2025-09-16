@@ -74,6 +74,6 @@ Developing a machine learning solutions is not always a linear process. Several 
 
 **Step 6. Model Implementation**: After the model achieves satisfactory performance on test data, implement the model. Implementing the model means performing the necessary tasks to scale the machine learning solution to big data.
 
-
+![[Pasted image 20250916092200.png]]
 
 
