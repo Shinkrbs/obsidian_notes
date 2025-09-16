@@ -48,8 +48,8 @@ Machine learning is divided into three primary learning model approaches: **Supe
 
 ***Examples of problems solved with unsupervised methods:***
 
-* Clustering methods - is the grouping of data that have similar characteristics. It helps segment data into groups and analyzes each to find patterns. 
-* Association methods - consists of discovering groups of items frequently observed together. Online retailers use associations to suggest additional purchases to a user based on the content of their shopping cart.
+* **Clustering methods** - is the grouping of data that have similar characteristics. It helps segment data into groups and analyzes each to find patterns. 
+* **Association methods** - consists of discovering groups of items frequently observed together. Online retailers use associations to suggest additional purchases to a user based on the content of their shopping cart.
 
 **Reinforcement Machine Learning** teaches the machine through trial and error using feedback from its actions and experiences, also known as learning from mistakes. It involves assigning positive values to desired outcomes and negative values to undesired effects. The results is optimal solutions; the system learns to avoid adverse outcomes and seek the positive. Practical applications of reinforcement learning include building ratification intelligence for playing video games and robotics and industrial automation.
 
@@ -72,8 +72,56 @@ Developing a machine learning solutions is not always a linear process. Several 
 
 **Step 5. Model Evaluation**: Test the solution on the test data. The performance on learning data are not necessarily transferrable to test data. The more complex and fine-tuned the model is, the higher the chances are that the model will become prone to over fitting, which means it cannot perform accurately against unseen data. **Overfitting** can result in going back to the model learning process.
 
-**Step 6. Model Implementation**: After the model achieves satisfactory performance on test data, implement the model. Implementing the model means performing the necessary tasks to scale the machine learning solution to big data.
+**Step 6. Model Implementation**: After the model achieves satisfactory performance on test data, implement the model. **Implementing the model** means performing the necessary tasks to scale the machine learning solution to big data.
 
 ![[Pasted image 20250916092200.png]]
 
+---
+## Training Machines to Recognize Patterns
 
+Tags: #MachineLearning #Training #ArtificialIntelligence  #AI #ML
+
+***Machine Learning is a subset of artificial Intelligence***. 
+
+**Artificial Intelligence** is the concept that a system can learn from data, identify patterns, and make decisions with little or no human intervention. 
+
+**Machine Learning** has many valuable applications in the field of data analytics. One application is pattern recognition.
+
+**Pattern Recognition** utilizes machine learning algorithms to identify patterns in digital data. These patterns are then applied to different datasets with the goal of recognizing the same or similar patterns in the new data. 
+
+**Pattern Recognition** uses the concept of learning to classify data based on statistical information gained from patterns and their representations. Learning enables the pattern recognition systems to be "trained" and adaptable to provide more accurate results. 
+
+***The training data set is used to build the model and consists of about 80% of the data.***
+
+***The testing data set consists of about 20% of the data and measures the model's accuracy.***
+
+![[Pasted image 20250916093356.png]]
+
+Pattern recognition algorithms can be applied to different types of digital data, including images, texts, or videos, and can be used to automate and solve complicated analytical problems fully. Examples:
+
+1. Mobile Security: Identifying fingerprints or facial recognition to gain access to a smartphone
+2. Engineering: Speech recognition by digital assistant system such as Alexa, Google Assistant, and Siri. 
+3. Geology: Detecting specific types of rocks and minerals and interpreting temporal patterns in seismic array recordings.
+4. Biomedical: Using biometric patterns to identify tumor and cancer cells in the body.
+
+---
+## What Did I Learn in This Module?
+
+**Topic Objective:** Explain the concept of AI
+
+AI uses computer systems to perform tasks that formerly required human intelligence. AI completes processes more efficiently and effectively. AI impacts numerous aspects of our lives, such as marketing, blogging, healthcare, agriculture, retail experiences, and fitness.
+
+**Topic Objective**: Explain how big data enables machine learning.
+
+Machine learning is a subset of artificial intelligence based on the concept that a system can learn from data, identify patterns, and make decisions with little or no human intervention. Machine learning is comprised of both classifiers and algorithms. Classifiers categorize operations, while algorithms are the techniques that organize and orient classifiers.
+
+Machine learning is divided into three primary learning model approaches: Supervised, Unsupervised, and Reinforced.
+
+A machine learning solution includes: 
+
+* Step 1 - Data Preparation
+* Step 2a - Learning Data
+* Step 2b - Testing Data
+* Step 3 and 4 - Learning Process Loop (Selection and Evaluation)
+* Step 5 - Model Evaluation
+* Step 6 - Model Implementation
