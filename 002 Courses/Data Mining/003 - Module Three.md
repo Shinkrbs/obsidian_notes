@@ -28,7 +28,6 @@ Tags: #Entertainment #Agriculture #Medicine #Retail #Fitness
 
 Tags: #MachineLearning #BigData #ML #MachineLearningAnalysis #Classifiers #Algorithms
 
-
 ### What is Machine Learning?
 
 Traditionally, computers solve problems through programs or instructions given to them by a human. Machine Learning just means the computer can figure out a solution without being specifically programmed. These machines have the ability to continuously learn by looking at data and finding patterns, and they do this much faster than a human could. 
@@ -39,7 +38,42 @@ Traditionally, computers solve problems through programs or instructions given t
 
 ## Types of Machine Learning Analysis
 
+Tags: #Supervised #Unsupervised #Reinforcement 
+
 Machine learning is divided into three primary learning model approaches: **Supervised, Unsupervised, and Reinforcement**. 
 
 **Supervised Machine Learning** algorithms are the most commonly used for predictive analytics. It requires human interaction to label data read for accurate supervised learning. In this model, the model is taught by example using input and output data sets processed by human experts, usually data scientists. The model learns the relationships between input and output data and then uses that information to formulate predictions based on new datasets.
+
+**Unsupervised Machine Learning** algorithms do not require human experts bu autonomously discover patterns in data. Unsupervised learning mainly deals with unlabeled data. The model must work on its own to find patterns and information. 
+
+***Examples of problems solved with unsupervised methods:***
+
+* Clustering methods - is the grouping of data that have similar characteristics. It helps segment data into groups and analyzes each to find patterns. 
+* Association methods - consists of discovering groups of items frequently observed together. Online retailers use associations to suggest additional purchases to a user based on the content of their shopping cart.
+
+**Reinforcement Machine Learning** teaches the machine through trial and error using feedback from its actions and experiences, also known as learning from mistakes. It involves assigning positive values to desired outcomes and negative values to undesired effects. The results is optimal solutions; the system learns to avoid adverse outcomes and seek the positive. Practical applications of reinforcement learning include building ratification intelligence for playing video games and robotics and industrial automation.
+
+---
+## The Machine Learning Process
+
+Tags: 
+
+Developing a machine learning solutions is not always a linear process. Several trial-and-error steps are necessary to fine-tune the solution. Here are the steps in the process of machine learning.
+
+**Step 1. Data Preparation:** Perform data cleaning procedures such as transformation into a structures format and removing missing data and noisy/corrupted observations.
+
+**Step 2a. Learning Data**: Create a learning data set used to train the model.
+
+**Step 2b. Testing Data**: Create a test dataset used to evaluate the model performance. (Only perform this step in the case of supervised learning)
+
+**Step 3. Learning Process Loop - Selection**: An algorithm is chosen based on the problem. Depending on the selected algorithm, additional pre-processing steps might be necessary.
+
+**Step 4. Learning Process Loop - Evaluation**: This selected algorithm's performance is evaluated on the learning data. If the algorithm and the model reach an acceptable performance on learning data, the solution validates the test data. Otherwise, repeat the learning process with a proposed new model and algorithm.
+
+**Step 5. Model Evaluation**: Test the solution on the test data. The performance on learning data are not necessarily transferrable to test data. The more complex and fine-tuned the model is, the higher the chances are that the model will become prone to over fitting, which means it cannot perform accurately against unseen data. **Overfitting** can result in going back to the model learning process.
+
+**Step 6. Model Implementation**: After the model achieves satisfactory performance on test data, implement the model. Implementing the model means performing the necessary tasks to scale the machine learning solution to big data.
+
+
+
 
