@@ -63,4 +63,31 @@ The *Operator* identifies the object and assigns the value.
 
 **Main Players in Expert System Development Team**
 
+**Domain Expert**: knowledgeable and skilled person capable of solving problems in a specific area or domain.
 
+**Knowledge Engineer**: establishes what reasoning methods the expert uses to handle facts and rules and decides how to represent them in the expert system.
+
+**Programmer**: the person responsible for the actual programming, describing the domain knowledge in terms that a computer can understand.
+
+**Project Manager**: checks if all deliverables and milestones are met, interacts with the expert, knowledge engineer, programmer, and end-user.
+
+**End-User**: the person who uses the expert uses.
+
+**Structure of a Rule-Based Expert System**
+
+**Knowledge Base**: contains the domain knowledge which are represented as a set of rules.
+- If the condition part of a rule is satisfied, the rule is said to fire and the action part is executed.
+
+**Database**: includes a set of facts used to match against the IF(condition) parts of rules stored in the knowledge base.
+
+**Inference Engine**: links the rules given in the knowledge base with the facts provided in the database.
+
+**Explanation Facilities**: enable the user to ask the expert system.
+
+**User Interface**: the means of communication between a user seeking a solution to the problem and an expert system.
+
+**Forward Chaining Technique**:
+
+Forward Chaining is the **Data-Driven Reasoning**.
+- The reasoning starts from the known data and proceeds forward with that data.
+- Each time only the top most rule is executed
