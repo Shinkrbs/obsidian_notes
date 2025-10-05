@@ -124,5 +124,31 @@ It is the process within a fuzzy logic system that uses fuzzy rules to map vague
 * The fuzzy sets representing the input values are compared to the conditions of each rule: IF antecedent THEN consequent
 * A fuzzy rule can have multiple antecedents joined by logical operators (AND or OR).
 * AND – intersection or minimum between the two sets.
+	![[Pasted image 20251006013629.png]]
 * OR – union or maximum between the two sets
+	![[Pasted image 20251006013705.png]]
 * NOT – opposite of the set
+	![[Pasted image 20251006013720.png]]
+
+## Defuzzification Methods
+
+- **Center of Area (COA)**: the average value of all the elements in the set, weighted by their membership degrees
+- **Meaning of Maximum (MOM)**: the average of all elements with the highest membership degree is calculated.
+- **Smallest of Maximum (SOM)**: the smallest element among those with the highest membership degree.
+- **Largest of Maximum (LOM)**: the largest element with the highest membership degree is chosen as the crisp output.
+
+## Fuzzy Model: Mamdani
+
+- proposed in 1975 by **E. Mamdani**
+- one of the first fuzzy systems and most popular one
+- consist of four standard steps: Fuzzyfication of input variables, Rule Evaluation, Aggregation of the results, Defuzzyfication
+
+## Fuzzy Model: Sugeno
+
+* also known as Takagi-Sugeno-Kang and was introduced in 1985.
+* Similar to Mamdani method except that the Sugeno output membership functions are either linear or constant.
+
+## Fuzzy Model: Tsukamoto
+
+- the consequent of each fuzzy IF-THEN rule is represented by a fuzzy set with a monotonic membership function fuzzy set.
+- this fuzzy model spends less time for defuzzyfication (same like Sugeno) but it is less transparent compared to Mandani or Sugeno.
