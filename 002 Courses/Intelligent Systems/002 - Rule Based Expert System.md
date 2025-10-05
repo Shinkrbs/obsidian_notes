@@ -90,4 +90,45 @@ The *Operator* identifies the object and assigns the value.
 
 Forward Chaining is the **Data-Driven Reasoning**.
 - The reasoning starts from the known data and proceeds forward with that data.
-- Each time only the top most rule is executed
+- Each time only the top most rule is executed (in *CLIPS* bottom most rule is executed first).
+- When fired, the rule adds a new fact in the database
+- Any rule can be executed only once
+- The match-fire cycle stops when no further rules can be fired
+
+**Backward Chaining Technique**:
+
+Backward Chaining is the **Goal-Driven Reasoning**.
+
+- An ES has the goal (a hypothetical solution) and the inference engine attempts to find the evidence to prove it.
+- First, the knowledge base is searched to find rules that might have the desired solution.
+- Such rules must have the goal in their THEN(action) parts
+- If such rule is found and its IF(condition) part matches data in the database, then the rule is fired and the goal is proved.
+- IF such rule is not found, the inference engine puts aside the rule it is working with (the rule is said to be stacked) and sets up a new goal (subgoal) to prove the IF part of this rule.
+- Then the knowledge base is searched again for rules that can prove the subgoal.
+- The inference engine repeats the process of stacking the rules until no rules are found in the knowledge base to prove the current subgoal.
+
+**Comparison**
+![[Pasted image 20251006001607.png]]
+![[Pasted image 20251006001618.png]]
+
+**How do we choose between FC and BC?
+
+- **Forward Chaining**: If an expert first needs to gather some information and then tries to infer from it whatever can be inferred(no specific goal).
+- **Backward Chaining**: If your experts begins with a hypothetical solution (goal) and then attempts to find facts to prove it.
+
+**Conflict Resolution**
+- Fire the rule with the highest priority
+- Fire the most specific rule (longest matching strategy)
+- Fire the rule that uses the data most recently entered in the database
+- Fire the rule with the most preferable outcome based on weight
+
+**Advantages of Rule-Based Expert System**
+- Natural Knowledge Representation
+- Uniform Structure
+- Separation of Knowledge from its processing
+- Dealing with incomplete and uncertain knowledge
+
+**Disadvantages of Rule-Based Expert System**
+- Opaque relations between rules
+- Ineffective search strategy
+- Inability to learn
