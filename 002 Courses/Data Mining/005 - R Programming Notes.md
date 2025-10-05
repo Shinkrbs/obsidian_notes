@@ -7,3 +7,5 @@ Tags: #R #RProgramming #RSyntax #Syntax
 - Check mean of specific variables: **mean(x$residuals)**
 - Check correlation between specific variable (change residuals): **cov(x$residuals, galton$parent)**
 - Test for equality: all.eqal(var1, var2)
+- Compute the correlation between sets: **cor(set1, set2)**
+- Look at the sigma portion of the summary of var: **summary(var)$sigma**
