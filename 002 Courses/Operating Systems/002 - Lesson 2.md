@@ -135,3 +135,20 @@ Tags: #OperatingSystem #OperatingSysteStructure
 
 ---
 ## System Calls and System Programs
+
+**System Calls**:
+- provide the interface between a process and the operating system.
+- these calls are generally available as assembly-language instructions, and are usually listed in the manuals used by assembly language programmers.
+- mostly accessed by programs via a high-level API rather than direct system call use.
+
+**Purpose**: since user-level processed do not have direct access to the underlying hardware or critical system resources, they rely on system calls to perform tasks that require privileged access.
+
+![[Pasted image 20251008032454.png]]
+![[Pasted image 20251008032505.png]]
+![[Pasted image 20251008032523.png]]
+
+**System Programs**:
+- provides a layer between the user and the operating system. 
+- these programs support and manage the operation of the OS and help users and system administrators perform various tasks related to system management, resource allocation, and program execution.
+- File manipulation, Status Information, File modification, Programming language support, Program loading and execution, Communications, Applications programs.
+- Most users view of the OS is *defined by system programs*, not the actual system calls.
