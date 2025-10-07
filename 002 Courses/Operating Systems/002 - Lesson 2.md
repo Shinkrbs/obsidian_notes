@@ -37,4 +37,6 @@ Tags: #OperatingSystem #OperatingSysteStructure
 - *IPC(Inter-Process Communication)*  mechanisms facilitate this communication.
 
 **A mechanism for Deadlock Handling**
-- *Deadlock*: a situation
+- *Deadlock*: a situation where two ore more processes are unable to proceed because each is waiting for the other release resources.
+- *Handling Deadlocks*: involves identifying when a deadlock has occurred, designing the system to avoid deadlocks through careful resource allocation and process design, using algorithms to ensure that deadlock conditions are not met, like the *Banker's Algorithm*, and taking action to recover from a deadlock, which may include terminating or restating processes, or preempting resources from processes.
+
