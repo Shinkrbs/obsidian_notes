@@ -116,4 +116,12 @@ Tags: #OperatingSystem #OperatingSysteStructure
 - *Secondary Storage*: used to store data and programs permanently. When a program is launched or data is needed, it is transferred from secondary storage to primary storage.
 - *Cache Storage*: holds copies of data from the most frequently used main memory locations. When the CPU needs to access data, it firsts checks the cache. If the data is there (*cache hit*), it can be accessed much faster than if it had to be fetched from RAM. If the data is not found (*cache miss*), it is fetched from the RAM, and the cache is updated.
 
-*Networking*: a d
+*Networking*: a distributed system is a collection of processors that do not share memory, peripheral devices, or a clock. The processors communicate with one another through communication lines called *network*.
+
+*Protection System*: 
+- *Protection*: mechanism for controlling the access of programs, processes, or users to the resources defined by a computer system. 
+- *Primary Purpose of Protection System*: to ensure the integrity, confidentiality, and availability of resources within a computer system. This helps prevents unauthorized access, data breaches, and potential damage to the system's operation.
+
+*Program Execution*: The system must be able to load a program into memory and to run it. The program must be able to end its execution, either normally or abnormally (indicating error).
+
+*I/O Operations*
