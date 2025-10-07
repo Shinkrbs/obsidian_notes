@@ -74,3 +74,46 @@ Tags: #OperatingSystem #OperatingSysteStructure
 - A *file* is collected of related information defined by its creator.
 - *Computer* can store files on the disk(secondary storage), which provide long term storage.
 
+1. The creation and deletion files
+2. The creation and deletion of directions
+3. The support of primitives for manipulating files and directions
+4. The mapping of files onto secondary storage
+5. The backup of files on stable storage media
+
+**The creation and deletion of files**
+- *OS handles the process of creating new files and removing existing ones*
+- When a file is created, the OS *allocates space on the disk and updates its directory* 
+- *Deletion*:  removes the file's data and frees up space.
+
+**The creation and deletion of directions**
+- *OS manages the creation of directories(folders) and their removal. 
+- *Directories*: help organize files
+- The *OS updates the file system structure to reflect new directories or remove them as needed.*
+
+**The support of primitives for manipulating files and directions**
+- *OS provides basic operations (primitives) for interacting with files and directories.* 
+- These operations include opening, reading, writing, closing files, and navigating directories. 
+- They allow applications and users to manage file data and directory structures.
+
+**The mapping of files onto secondary storage**
+- *OS translates file data into specific locations on disk storage*
+- It maintains a file allocation table or similar structure to keep track of where each file's data is stored on the disk.
+
+**The backup of files on stable storage media**
+- *OS ensures that files are backed up to prevent data loss*
+- It involves copying files to backup storage media to safeguard against hardware failures or data corruption.
+
+**I/O System Management**
+- A purpose of an OS is to *hide the peculiarities of specific hardware devices from the user*. 
+- The OS *provides a consistent and standardized interface for input and output operations, regardless of the specific hardware being used.*
+
+**Secondary-Storage Management
+- Levels of Storage: Primary Storage, Secondary Storage, and Cache Storage
+- Instructions and data must be placed in *primary storage or cached storage* to be referenced by a running program
+
+**Functions**
+- *Main Memory*: When you run a program, the instructions and data needed by the CPU are loaded from secondary storage into primary storage. This allows the CPU to access this information quickly.
+- *Secondary Storage*: used to store data and programs permanently. When a program is launched or data is needed, it is transferred from secondary storage to primary storage.
+- *Cache Storage*: holds copies of data from the most frequently used main memory locations. When the CPU needs to access data, it firsts checks the cache. If the data is there (*cache hit*), it can be accessed much faster than if it had to be fetched from RAM. If the data is not found (*cache miss*), it is fetched from the RAM, and the cache is updated.
+
+*Networking*: a d
