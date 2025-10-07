@@ -122,6 +122,16 @@ Tags: #OperatingSystem #OperatingSysteStructure
 - *Protection*: mechanism for controlling the access of programs, processes, or users to the resources defined by a computer system. 
 - *Primary Purpose of Protection System*: to ensure the integrity, confidentiality, and availability of resources within a computer system. This helps prevents unauthorized access, data breaches, and potential damage to the system's operation.
 
+---
+## Operating System Services
+
 *Program Execution*: The system must be able to load a program into memory and to run it. The program must be able to end its execution, either normally or abnormally (indicating error).
 
-*I/O Operations*
+*I/O Operations*: A running program may require I/O. This I/O may involve file or an I/O device.
+
+*File System Manipulation*: The output of a program may need to be written into new files or input taken from some files. The operating system provides this service.
+
+*Error Detection*: An error is one part of the system may cause malfunctioning of the complete system. To avoid such a situation the operating system constantly monitors the system from detecting the errors.
+
+---
+## System Calls and System Programs
