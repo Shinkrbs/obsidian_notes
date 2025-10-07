@@ -64,3 +64,13 @@ Tags: #OperatingSystem #OperatingSysteStructure
 - The OS decides which processes to *load or swap in from disk storage when memory becomes available*
 - This helps in efficiently utilizing memory and ensuring the active processes have the resources they need.
 
+**Allocate and Deallocate memory space as needed.**
+- The *OS handles the assignment of memory to processes* and then *reclaims that memory when it's no longer needed*.
+- When a process requests memory, the *OS allocates a suitable block of memory from the free pool*
+- When the process terminates or no loner needs certain memory, the *OS deallocates memory, making it available for other processes*. 
+- This dynamic management ensures that memory is used efficiently and prevents fragmentation or wastage.
+
+**File Management**
+- A *file* is collected of related information defined by its creator.
+- *Computer* can store files on the disk(secondary storage), which provide long term storage.
+
