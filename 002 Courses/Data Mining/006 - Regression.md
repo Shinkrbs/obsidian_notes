@@ -16,3 +16,19 @@ Tags: #Regression #RegressionModel
 **Linear**: a linear regression is a model where the relationship between inputs and outputs is a straight line. 
 
 **Multiple**: a multiple regression indicates that there are more than one input variables that may affect the outcome, or target variable. 
+
+---
+## Simple Linear Regression
+
+**Formula for Simple Linear Regression**
+
+![[Pasted image 20251017004231.png]]
+
+- **y** is the predicted value of the dependent value variable (**y**) for any given value of the independent value (**x**)
+- **B0** is the **intercept**, the predicted value of **y** when the **x** is 0.
+- **B1** is the regression coefficient – how much we expect **y** to change as **x** increases.
+- **x** is the independent variable ( the variable we expect is influencing **y**).
+- **e** is the **error** of the estimate, or how much variation there is in our estimate of the regression coefficient.
+
+
+
