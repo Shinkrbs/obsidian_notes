@@ -15,6 +15,8 @@ Tags: #Regression #RegressionModel
 
 **Linear**: a linear regression is a model where the relationship between inputs and outputs is a straight line. 
 
+**Linear Regression** finds the line of best fit line through your data by searching for the regression coefficient (**B1**) that minimizes the total error (**e**) of the model.
+
 **Multiple**: a multiple regression indicates that there are more than one input variables that may affect the outcome, or target variable. 
 
 ---
