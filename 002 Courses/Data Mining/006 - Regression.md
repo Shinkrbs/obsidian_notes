@@ -35,6 +35,8 @@ Tags: #Regression #RegressionModel
 ---
 ## MSE Formula for Excel
 
+**Mean Squared Error (MSE)**: is an estimate that measures the average squared difference between the estimated values and the actual values of a data distribution. It calculates the average squared differences between the points and the regression line. That is, the mean of the squares of the residuals.
+
 - Find Difference: ` Difference = Forecasted - Actual`
 - Square the Difference and find Average to get MSE: `MSE = Average(Difference * Difference)`
 
