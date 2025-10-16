@@ -32,5 +32,10 @@ Tags: #Regression #RegressionModel
 - **x** is the independent variable ( the variable we expect is influencing **y**).
 - **e** is the **error** of the estimate, or how much variation there is in our estimate of the regression coefficient.
 
+---
+## MSE Formula for Excel
+
+- Find Difference: ` Difference = Forecasted - Actual`
+- Square the Difference and find Average to get MSE: `MSE = Average(Difference * Difference)`
 
 
