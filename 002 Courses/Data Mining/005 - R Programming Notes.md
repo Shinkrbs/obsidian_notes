@@ -26,3 +26,13 @@ Tags: #R #RProgramming #RSyntax #Syntax
 - Equation for the linear model: `lm()`
 - Get forecast/predicted data: `y_pred <- predict(income.happiness.lm, income.data)`
 - Extract Actual Data: `y_true <- income.data$happiness`
+
+---
+# Multiple Linear Regression
+
+*The data used is title **heart.data.***
+
+- See if there's a linear relationship between biking to work, smoking, and heart disease.
+- Multiple Linear Regression: `heart.disease.lm<-lm(heart.disease ~ biking + smoking, data = heart.data)
+
+`

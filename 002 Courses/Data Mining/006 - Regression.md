@@ -59,6 +59,20 @@ Tags: #Regression #RegressionModel
 - The **larger** the RMSE, the larger the difference between the predicted and observed values, which means **worse** the regression model fits the data.
 - The **smaller** the RMSE, the better a model is able to fit the data
 
+---
+## MAE Formula for Excel
 
+**Mean Absolute Error** is the measure of error between the observed and the expected values in a given data set.
 
+- Find Difference: ` Difference = Forecasted - Actual`
+- Calculate Absolute Values: `ABS(row of Difference)`
+- Calculate for MAE: `MAE = AVERAGE(rows of ABS)`
 
+---
+## Linearity Test
+
+**Normality Test**: Check whether the dependent variable follows a normal distribution (bell).
+
+	`hist(income.data$happiness)`
+
+FUCK THIS SHIT
