@@ -33,11 +33,24 @@ Tags: #Regression #RegressionModel
 - **e** is the **error** of the estimate, or how much variation there is in our estimate of the regression coefficient.
 
 ---
+## Excel Stuff
+
+- `SUMSQ`: Sum of squares, first squares each number in a range, and then adds up those squares
+- `COUNTA`: Counts any cell that is not empty. Includes numbers, text, error values, and even cells that contains a formula returning an empty string. It only ignores truly blank cells.
+---
 ## MSE Formula for Excel
 
 **Mean Squared Error (MSE)**: is an estimate that measures the average squared difference between the estimated values and the actual values of a data distribution. It calculates the average squared differences between the points and the regression line. That is, the mean of the squares of the residuals.
 
 - Find Difference: ` Difference = Forecasted - Actual`
 - Square the Difference and find Average to get MSE: `MSE = Average(Difference * Difference)`
+
+---
+## RMSE Formula for Excel
+
+**Root Mean Square Error (RMSE)** is a metric that tells us how far apart our predicted values are from our observed values, on average.
+
+- Find Difference: ` Difference = Forecasted - Actual`
+- Use Formula `SQRT(SUMSQ(rows) / COUNTA(rows))`
 
 
