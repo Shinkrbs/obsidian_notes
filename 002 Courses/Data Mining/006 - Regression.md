@@ -53,4 +53,12 @@ Tags: #Regression #RegressionModel
 - Find Difference: ` Difference = Forecasted - Actual`
 - Use Formula `SQRT(SUMSQ(rows) / COUNTA(rows))`
 
+## How to Interpret RMSE
+
+- **RMSE** is a useful way to see how well a regression model is able to "fit" a dataset. 
+- The **larger** the RMSE, the larger the difference between the predicted and observed values, which means **worse** the regression model fits the data.
+- The **smaller** the RMSE, the better a model is able to fit the data
+
+
+
 
