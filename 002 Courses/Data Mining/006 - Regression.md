@@ -75,4 +75,3 @@ Tags: #Regression #RegressionModel
 
 	`hist(income.data$happiness)`
 
-FUCK THIS SHIT

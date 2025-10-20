@@ -63,7 +63,7 @@ Tags: #OperatingSystem #History #AdaLovelace
 
 ![[Pasted image 20250917041516.png]]
 
-**The 1965-1980: Third Generation ICs and Multiprogramming:**
+**The 1965-1980: Third Generation ICs and Multi-programming:**
 
 - The systems of the 1960s were also batch processing systems, but they were able to take better advantage of the computer's resources by running several jobs at once.
 
