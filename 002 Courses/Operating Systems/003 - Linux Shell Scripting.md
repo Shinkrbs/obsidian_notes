@@ -70,4 +70,62 @@ fi
 `$E -a $F`-true if expressions E and F are both true
 `$E -o $F`-true if either expression E or expression F is true
 
+```bash
+# for loops
+for variable in list
+do
+statements (referring to $variable)
+done
 
+# example: script sorts each text files in the current directory
+#!/bin/sh
+for f in *.txt
+do
+echo sorting file $f
+cat $f | sort > $f.sorted
+echo sorted file has been output to $f.sorted
+done
+```
+```bash
+# while loops
+while [ test ]
+do
+statements (to be executed while test is true)
+done
+
+# example: sript waits until a non-empty file input.txt has been created
+#!/bin/sh
+while [ ! -s input.txt ]
+do
+echo waiting...
+sleep 5
+done
+echo input.txt is ready
+```
+
+You can abort a shell script at any point using the `exit` statement.
+```bash
+#!/bin/sh
+while true
+do
+if [ -s input.txt ]
+echo input.txt is ready
+exit
+fi
+echo waiting...
+sleep 5
+done
+```
+
+```bash
+# case statements
+case variable in
+pattern1)
+statement (executed if variable matches pattern1)
+;;
+pattern2)
+statement
+;;
+etc.
+esac
+```
