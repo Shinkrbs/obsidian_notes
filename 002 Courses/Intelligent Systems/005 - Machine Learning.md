@@ -24,4 +24,22 @@ Tags: #MachineLearning #IntelligentSystems
 7. Information Extraction Social Networks
 8. Debugging Software
 
+## Classifications Based on Goal, Tasks, Target Function
+
+**Prediction**: system predicts the desired output for a given input based on previous input/output pairs
+
+*Examples:*
+- prediction of stock values given other (input) parameters values (market index, interest rates, currency conversion, etc.).
+
+**Regression**: system estimates a function of many variables (*multivariate*) or single variable (*univariate*) from scattered data.
+
+*Examples:*
+- prediction of stock values given other (input) parameters values (market index, interest rates, currency conversion, etc.).
+
+**Classification (Categorization)**: system classifies an object into one of several categories (or classes) based on features of the object. 
+
+*Examples*:
+- Diagnosis System which has to classify a patient's cancer tumor into one of the three categories: avascular, vascular, angiogenesis.
+
+**Clustering**: system task is to organize a group of objects into homogeneous segments.
 
