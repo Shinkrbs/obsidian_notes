@@ -19,7 +19,7 @@ Tags: #Perceptron #NeuralNetwork
 **Discrete Perceptron**: Gives a hard, final verdict (Yes or No). (Yes or No)
 **Continuous Perceptron**: Gives a nuanced "confidence score" or probability (How much?). (There is a 12% chance it is No)
 
-
-
+**Application:** Perceptron is used for classification. 
+**Classification**: 
 
  
