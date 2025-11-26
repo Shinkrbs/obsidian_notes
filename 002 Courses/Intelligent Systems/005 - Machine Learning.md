@@ -111,4 +111,15 @@ Tags: #MachineLearning #IntelligentSystems
 1. Cannot get precise information regarding data sorting, and the output as data used in unsupervised learning is labeled and not known.
 2. Less accuracy of the results is because the input data is not known and not labeled by people in advance. This means the machine requires to do this itself.
 3. The spectral classes do not always correspond to informational classes.
-4. The user needs to spend time interpreting and label the classes which 
+4. The user needs to spend time interpreting and label the classes which follow that classification.
+5. Spectral properties of classes can also change over time so you can't have the same class information while moving from one image to another.
+
+**Reinforcement Learning**:
+1. There is no supervisor, only a real number or reward signal 
+2. Sequential decision making
+3. Time plays a crucial role in Reinforcement Problems
+4. Feedback is always delayed, not instantaneous
+5. Agent's actions determine the subsequent data it receives.
+
+*Reinforcement Learning: Applications*:
+1. 
