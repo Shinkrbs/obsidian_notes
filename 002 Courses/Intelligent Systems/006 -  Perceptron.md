@@ -46,3 +46,5 @@ Tags: #Perceptron #NeuralNetwork
 3. Sum all the results
 4. Activate the output
 
+**Bias: the target number is always 0**
+**Threshold: target number changes**
