@@ -7,4 +7,6 @@ Tags: #CPUScheduling #OperatingSystem
 
 **Scheduling**: a fundamental operating-system function. Almost all computer resources are scheduled before use.
 
+**Burst**: refers to a period during which a process actively **utilizes** the CPU for computation, known as a **CPU Burst**, and alternates with periods of waiting for I/O operations, known as **I/O bursts**.
+
 **CPU - I/O Burst Cycle**: 
