@@ -176,9 +176,7 @@ Node provides an interactive console which lets you run and edit your JavaScript
 [What is NodeJS?](https://www.youtube.com/watch?v=uVwtVBpw7RQ)
 
 ---
-# Data Types and Conditionals
 
-Tags: #DataTypes #Conditionals
 
 Data types in JavaScript are called **dynamically typed**, meaning that there exist data types, but variables are not bound to any of them.
 
@@ -224,6 +222,152 @@ So, if there's a Nan somewhere in a mathematical expression, it propagates to th
 const bigInt = 1234567890123456789012345678901234567890n;
 ```
 
-## String
+## Strings
+
+**String concatenation** using the **concat()** method. It is a very useful method when you need to concatenate multiple strings together.
+
+```js
+let str1 = 'Hello';
+let str2 = 'World';
+
+let result = str1.concat(' ', str2); 
+console.log(result); // Hello World
+```v
+```
 
 
+## Typeof
+
+The typeof operator lets you see the data type of variable or value. It always returns a string indicating a type.
+
+```js
+let num = 42;
+console.log(typeof num); // "number"
+```
+
+## Symbol 
+
+The symbol data type is a unique and immutable value that may used as an identifier for object properties.
+
+```js
+const crypticKey1= Symbol("saltNpepper");
+const crypticKey2= Symbol("saltNpepper");
+console.log(crypticKey1 === crypticKey2); // false
+```
+
+## Length
+
+The length property of a string tells you how many characters it contains.
+
+```js
+let greeting = "hello";
+console.log(greeting[greeting.length - 1]); // "o"
+```
+
+## Bracket Notations
+
+Strings are treated as sequences of characters, and each character in a string can be accessed using bracket notation. 
+
+```js
+let greeting = "hello";
+console.log(greeting[1]); // "e"
+```
+
+## Escaping Characters
+
+Place backslash (\) before the statement.
+
+```js
+let statement = "She said, \"Hello!\"";
+console.log(statement); // She said, "Hello!"
+```
+
+## Template Literals
+
+Allow for easier string manipulation, including embedding variables directly inside a string, a feature known as **string interpolation**.
+
+```js
+const name = "Alice";
+const greeting = `Hello, ${name}!`;
+
+console.log(greeting);
+```
+
+```js
+const name = "Alice";
+const age = 25;
+const message = `My name is ${name} and I am ${age} years old.`;
+console.log(message);
+```
+
+Spaces without using \n
+```js
+let poem = `Roses are red,
+Violets are blue,
+JavaScript is fun,
+And so are you.`;
+
+console.log(poem);
+```
+
+Embed JavaScript expressions directly within the string.
+```js
+const song = "Bohemian Rhapsody";
+const score = 9.5;
+const highestScore = 10;
+const output = `One of my favorite songs is "${song}". I rated it ${
+  (score / highestScore) * 100
+}%.`;
+console.log(output); 
+```
+
+## Finding a substring using typeof method
+
+The `indexOf()` method takes two arguments: the first is the substring you want to find within the larger string, and the second is an option starting position for the search. If you don’t provide a starting position, the search will begin at the start of the string. It is important to note that the method is case sensitive.
+ 
+```js
+let sentence = "JavaScript is awesome!";
+let position = sentence.indexOf("awesome!");
+console.log(position); // 14
+```
+
+```js
+let sentence = "JavaScript is awesome!";
+let position = sentence.indexOf("fantastic");
+console.log(position); // -1
+```
+
+```js
+let sentence = "JavaScript is awesome, and JavaScript is powerful!";
+let position = sentence.indexOf("JavaScript", 10);
+console.log(position); // 27
+```
+
+```js
+console.log("freeCodeCamp".indexOf("F")) // -1
+```
+
+## Prompt
+
+The `prompt()` method is an important part of JavaScript's interaction with the user. It’s one of the simplest ways to get input from a user through a small pop-up dialog box. It opens a dialog box that asks the user for some input, and then it returns the text entered by the user as a string.
+
+The `prompt()` method takes two arguments: The first one is the message which will appear inside the dialog box, typically prompting the user to enter information. And the second one is a default value which is optional and will fill the input field initially.
+
+```js
+prompt(message, default);
+```
+
+```html
+<button id="prompt-btn">Show Prompt</button>
+<p id="output"></p>
+<script src="index.js"></script>
+```
+
+```js
+const btn = document.getElementById("prompt-btn");
+const output = document.getElementById("output");
+btn.addEventListener("click", () => {
+  const userName = prompt("What is your name?", "Guest");
+  output.textContent = "Hello, " + userName + "!";
+});
+```
