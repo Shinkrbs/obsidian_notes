@@ -321,7 +321,7 @@ const output = `One of my favorite songs is "${song}". I rated it ${
 console.log(output); 
 ```
 
-## Finding a substring using typeof method
+## Finding a substring using indexOf method
 
 The `indexOf()` method takes two arguments: the first is the substring you want to find within the larger string, and the second is an option starting position for the search. If you don’t provide a starting position, the search will begin at the start of the string. It is important to note that the method is case sensitive.
  
@@ -371,3 +371,25 @@ btn.addEventListener("click", () => {
   output.textContent = "Hello, " + userName + "!";
 });
 ```
+
+## ASCII
+
+In JavaScript, you can access the numeric code of a character using the `charCodeAt()` method. This method returns the UTF-16 code unit of the character at a specified index. For the first 128 characters, this value matches the ASCII code.
+
+```js
+let letter = "A";
+console.log(letter.charCodeAt(0));  // 65
+
+let symbol = "!";
+console.log(symbol.charCodeAt(0));  // 33
+```
+
+`fromCharCode()` method allows you to do the opposite: convert a UTF-16 code unit (which matches ASCII for basic characters) into its corresponding character.
+
+```js
+let char = String.fromCharCode(65);
+console.log(char);  //  A
+```
+
+
+
