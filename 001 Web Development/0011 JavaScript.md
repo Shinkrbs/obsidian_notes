@@ -224,7 +224,9 @@ const bigInt = 1234567890123456789012345678901234567890n;
 
 ## Strings
 
-**String concatenation** using the **concat()** method. It is a very useful method when you need to concatenate multiple strings together.
+**String concatenation** using the **concat()** method. It is a very useful method when you need to concatenate multiple strings together. 
+
+Strings are primitive data types and they are immutable. Immutability means that once a string is created, it cannot be changed.
 
 ```js
 let str1 = 'Hello';
@@ -374,6 +376,8 @@ btn.addEventListener("click", () => {
 
 ## ASCII
 
+**ASCII** stands for **American Standard Code for Information Interchange**.
+
 In JavaScript, you can access the numeric code of a character using the `charCodeAt()` method. This method returns the UTF-16 code unit of the character at a specified index. For the first 128 characters, this value matches the ASCII code.
 
 ```js
@@ -391,5 +395,202 @@ let char = String.fromCharCode(65);
 console.log(char);  //  A
 ```
 
+## Includes Method
 
+The `includes()` method is used to check if a string contains a specific substring. If the substring is found within the string, the method returns `true` otherwise, it returns `false`.
 
+```js
+let phrase = "JavaScript is awesome!";
+let result = phrase.includes("awesome");
+
+console.log(result);  // true
+```
+
+It's important to note that the `includes()` method is case-sensitive. This means that the exact match of the characters is required, including their case.
+
+You can also use the `includes()` method to check for a substring starting at a specific index in the string by providing a second parameter:
+
+```js
+let text = "Hello, JavaScript world!";
+let result = text.includes("JavaScript", 7);
+
+console.log(result);  // true
+```
+
+The `includes()` method only returns a `true` or `false` result. It does not provide information on where the substring is located in the string or how many times it occurs. If you need that level of detail, other methods, such as the `indexOf()` method might be more suitable.
+
+## Slice Method
+
+The `slice()` method allows you to extract a portion of a string and returns a new string, without modifying the original string. It takes two parameters: the starting index and the optional ending index.
+
+```js
+string.slice(startIndex, endIndex);
+
+let message = "Hello, world!";
+let greeting = message.slice(0, 5);
+
+console.log(greeting);  // Hello
+```
+
+If you omit the second parameter, `slice()` will extract everything from the start index to the end of the string:
+
+```js
+let message = "Hello, world!";
+let world = message.slice(7);
+
+console.log(world);  // world!
+```
+
+You can also use negative numbers as indexes. When you use a negative number, it counts backward from the end of the string:
+
+```js
+let message = "JavaScript is fun!";
+let lastWord = message.slice(-4);
+
+console.log(lastWord);  // fun!
+```
+
+Let's say you want to extract a section from the middle of a string. You can provide both the starting and ending indexes to precisely control which part of the string you want:
+
+```js
+let message = "I love JavaScript!";
+let language = message.slice(7, 17);
+
+console.log(language);  // JavaScript
+```
+
+## Change Casing of Strings
+
+Transforming all letters to uppercase for a heading or converting text to lowercase for uniformity using `toUpperCase()` and `toLowerCase()`.
+
+The `toUpperCase()` method converts all the characters to uppercase letters and returns a new string with all uppercase characters. This is useful when you want to emphasize text or create consistency in the format of strings.
+
+```js
+let greeting = "Hello, World!";
+let uppercaseGreeting = greeting.toUpperCase();
+console.log(uppercaseGreeting);  // "HELLO, WORLD!"
+```
+
+The `toLowerCase()` method converts all characters in a string to lowercase. This is helpful when you need to standardize input, such as when comparing user-provided text or making case-insensitive checks.
+
+```js
+let shout = "I AM LEARNING JAVASCRIPT!";
+let lowercaseShout = shout.toLowerCase();
+console.log(lowercaseShout);  // "i am learning javascript!"
+```
+
+## Trim Whitespace from a String
+
+Trim whitespace using `trim()`, `trimStart()`, and `trimEnd()` methods.
+
+Whitespace refers to spaces, tabs, or line breaks that occur in a string but are not visible characters. For example:
+
+```js
+let greeting = "   Hello, world!   ";
+```
+
+The `trim()` method is the most commonly used way to remove whitespace from both the beginning and the end of a string. Here's an example:
+
+```js
+let message = "   Hello!   ";
+console.log(message); // "   Hello!   "
+let trimmedMessage = message.trim();
+console.log(trimmedMessage);  // "Hello!"
+```
+Note that any whitespace within the string (between words, for example) is left untouched by `trim()`.
+
+Sometimes, you may only want to remove whitespace from either the beginning or the end of a string, but not both. This is where `trimStart()` and `trimEnd()` come in.
+
+`trimStart()` removes whitespace from the beginning (or start) of the string.
+
+```js
+let greeting = "   Hello!   ";
+console.log(greeting);  // "   Hello!   "
+let trimmedStart = greeting.trimStart();
+console.log(trimmedStart);  // "Hello!   "
+```
+
+`trimEnd()` removes whitespace from the end of the string.
+
+```js
+let greeting = "   Hello!   ";
+console.log(greeting);  // "   Hello!   "
+let trimmedEnd = greeting.trimEnd();
+console.log(trimmedEnd);  // "   Hello!"
+```
+
+## Replace Parts of a String with Another
+
+The `replace()` method in JavaScript allows you to find a specified value (like a word or character) in a string and replace it with another value. The method returns a new string with the replacement and leaves the original unchanged because JavaScript strings are immutable.
+
+```js
+string.replace(searchValue, newValue);
+```
+
+`searchValue` is the value you want to search for in the string. It can be either a string or a regular expression (regex), which describes patterns in text. This allows you to search for and manipulate strings in a flexible and powerful way. You'll learn more about regular expressions in future lessons.
+
+The `newValue` is the value that will replace the `searchValue`. Here's a simple example:
+
+```js
+let text = "I love JavaScript!";
+console.log(text); // "I love JavaScript!"
+let newText = text.replace("JavaScript", "coding");
+console.log(newText);  // "I love coding!"
+```
+The `replace()` method is case-sensitive, meaning that it will only find exact matches of the `searchValue`. By default, the `replace()` method will only replace the first occurrence of the `searchValue`
+
+`replaceAll()` method  returns a new string for all matches to the substring.
+
+```js
+const dogsOnlySentence = exampleSentence.replaceAll("cats", "dogs");
+console.log("Replacing all occurrences of cats with dogs:");
+console.log(dogsOnlySentence); // I love dogs and dogs are so much fun!
+```
+
+## Repeat a String x Number of Times
+
+The `repeat()` method is a built-in function in JavaScript that allows you to repeat a string a specified number of times.
+
+```js
+string.repeat(count);
+```
+
+`string` is the string that you want to repeat, and `count` is the number of times you want the string to be repeated. Here's an example:
+
+```js
+let word = "Hello!";
+let repeatedWord = word.repeat(3);
+console.log(repeatedWord);  // "Hello!Hello!Hello!"
+```
+
+The `count` parameter must be a non-negative number. If you pass a negative number, JavaScript will throw a `RangeError`. The `count` must be a finite number. If you try to repeat a string an infinite number of times or use `Infinity` as the count, you will also get a `RangeError`.
+
+In JavaScript, `Infinity` is a special value that represents an infinite quantity. It's used to denote numbers that are larger than any finite number.
+
+```js
+let word = "Test";
+console.log(word.repeat(Infinity));  // Throws RangeError: Invalid count value
+```
+
+If the count is not an integer (such as a decimal like `2.5`), the `repeat()` method will round it down to the nearest integer.
+
+```js
+let word = "Test";
+console.log(word.repeat(2.5));  // "TestTest"
+```
+
+If you pass `0` as the count, the `repeat()` method will return an empty string.
+
+```js
+let word = "Test";
+console.log(word.repeat(0));  // ""
+```
+
+You are not limited to passing a number directly into the `repeat()` method. You can also pass a variable that stores a number value.
+
+```js
+let count = 4;
+let word = "Test";
+let repeatedWord = word.repeat(count);
+console.log(repeatedWord); // TestTestTestTest
+```
