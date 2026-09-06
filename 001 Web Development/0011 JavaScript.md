@@ -176,52 +176,11 @@ Node provides an interactive console which lets you run and edit your JavaScript
 [What is NodeJS?](https://www.youtube.com/watch?v=uVwtVBpw7RQ)
 
 ---
+# Strings in JavaScript
 
+Tags: #Strings #StringsinJavaScript #FunctionsofStringsinJavaScript 
 
-Data types in JavaScript are called **dynamically typed**, meaning that there exist data types, but variables are not bound to any of them.
-
-## Number
-
-The number type represents both integer and floating point numbers. Besides regular numbers, there are so-called **special numeric values** which also belong to this data type: **Infinity, -Infinity, and Nan**.
-
-**Infinity** represents mathematical infinity. It is a special value that's greater than any number. We can get it as a result of division by zero:
-
-``` javascript
-alert (1/0); //Infinity
-
-```
-
-Or just reference it directly: 
-
-```javascript
-alert (Infinity); //Infinity
-```
-
-**Nan** represents computational error. It is a result of an incorrect or an undefined mathematical operation, for instance:
-
-```javascript
-alert("not a number" / 2); //Nan
-```
-
-Nan is sticky. Any further mathematical operation on Nan returns Nan:
-
-```javascript
-alert( NaN + 1 ); // NaN
-alert( 3 * NaN ); // NaN
-alert( "not a number" / 2 - 1 ); // NaN
-```
-
-So, if there's a Nan somewhere in a mathematical expression, it propagates to the whole result (there's only one exception to that: Nan ** 0 is 1).
-
-## BigInt
-
-**BigInt** type was added to the language to represent integers of arbitrary length. A BigInt value is created by appending n to the end of an integer.
-
-```javascript
-// the "n" at the end means it's a BigInt
-const bigInt = 1234567890123456789012345678901234567890n;
-```
-
+---------
 ## Strings
 
 **String concatenation** using the **concat()** method. It is a very useful method when you need to concatenate multiple strings together. 
@@ -594,3 +553,371 @@ let word = "Test";
 let repeatedWord = word.repeat(count);
 console.log(repeatedWord); // TestTestTestTest
 ```
+
+------
+# Booleans and Numbers in JavaScript
+
+Tags: #Numbers #Booleans #NumbersinJavaScript #BooleansinJavaScript
+
+-------
+
+## Number Type 
+
+ JavaScript uses one unified `Number` type to account for numbers. This means you can work with whole numbers, decimals, and even special numeric values all under the same `Number` data type umbrella.
+
+```js
+const wholeNumber = 50;
+const decimalNumber = 4.5;
+const negativeNumber = -7;
+
+console.log(typeof wholeNumber); // number
+console.log(typeof decimalNumber); // number
+console.log(typeof negativeNumber); // number
+```
+
+JavaScript's `Number` type includes various kinds of numeric values, ranging from simple integers and floating-point numbers to special cases like `Infinity` and `NaN`, or "Not a Number".
+
+JavaScript can represent numbers that are beyond the maximum limit with `Infinity`. You'll encounter this when you try to divide a number by zero or on rare occasions, exceed the upper boundary of the `Number` type.
+
+```js
+const infiniteNumber = 1 / 0;
+console.log(infiniteNumber); // Infinity
+console.log(typeof infiniteNumber); // number
+```
+
+Some mathematical operations don't result in a valid number. For instance, if you try to perform a mathematical operation on something that isn't a number, you'll get `NaN`, which stands for "Not a Number".
+
+```js
+const notANumber = 'hello world' / 2;
+console.log(notANumber); // NaN
+```
+
+The type of `NaN` is also `Number`:
+
+```js
+const notANumber = 'hello world' / 2;
+console.log(typeof notANumber); // number
+```
+
+## Arithmetic Operators
+
+The addition operator is a plus sign (`+`). The addition operator allows you to find the total of two or more numbers. 
+
+The subtraction operator is a minus sign (`-`). It allows you to find the difference between two numbers. If a smaller number comes first, you'll get a negative result.
+
+The multiplication operator is represented by an asterisk (`*`) and is used to find the product of two or more numbers.
+
+The division operator is a slash (`/`), which differs from the division symbol used in traditional math (`÷`). It's important to note that if you try to divide by zero, JavaScript will return `Infinity`.
+
+The remainder operator, represented by a percentage sign (`%`), returns the remainder of a division.
+
+The exponentiation operator, represented by a double asterisk (`**`), raises one number to the power of another.
+
+It's possible to mix operators in a single operation or expression. When you mix different operators in a single expression, the JavaScript engine follows a system called **operator precedence** to determine the order of operations. **Operator precedence** determines the order in which operations are executed in expressions.
+
+```js
+const result = 10 + 5 * 2 - 8 / 4;
+console.log(result); // 18
+```
+
+## Calculations with Numbers and Strings
+
+In JavaScript, the `+` operator does double duty. It handles both addition and string concatenation, which is a way to join two strings together. 
+
+When you use `+` with a number and a string, JavaScript decides to treat them both as strings and joins them together. If you check the type of the result with the `typeof` operator, you'd see it's indeed a string:
+
+```js
+const result = 5 + '10';
+
+console.log(result); // 510
+console.log(typeof result); // string
+```
+
+The same thing happens even if you switch the string and the number.
+
+Things get more interesting when you try to perform other arithmetic operations like subtraction, multiplication, or division with a string and number. In these cases, JavaScript tries to convert the string into a number before doing the math – another type coercion! Here's what happens:
+
+```js
+const subtractionResult = '10' - 5;
+console.log(subtractionResult); // 5
+console.log(typeof subtractionResult); // number
+
+const multiplicationResult = '10' * 2;
+console.log(multiplicationResult); // 20
+console.log(typeof multiplicationResult); // number
+
+const divisionResult = '20' / 2;
+console.log(divisionResult); // 10
+console.log(typeof divisionResult); // number
+```
+
+But what if the string doesn't look like a number? Let's see what happens in that case:
+
+```js
+const subtractionResult = 'abc' - 5;
+console.log(subtractionResult); // NaN
+console.log(typeof subtractionResult); // number
+
+const multiplicationResult = 'abc' * 2;
+console.log(multiplicationResult); // NaN
+console.log(typeof multiplicationResult); // number
+
+const divisionResult = 'abc' / 2;
+console.log(divisionResult); // NaN
+console.log(typeof divisionResult); // number
+```
+
+What if you perform arithmetic operations with a boolean (`true` or `false`)? Let's see what happens. JavaScript treats booleans as numbers in mathematical operations: `true` becomes `1`, and `false` becomes `0`.
+
+```js
+const result1 = true + 1;
+console.log(result1); // 2
+console.log(typeof result1); // number
+
+const result2 = false + 1;
+console.log(result2); // 1
+console.log(typeof result2); // number
+
+const result3 = 'Hello' + true;
+console.log(result3); // "Hellotrue"
+console.log(typeof result3); // string
+```
+
+For `null` and `undefined`, JavaScript treats `null` as `0` and `undefined` as `NaN` in mathematical operations:
+
+```js
+const result1 = null + 5;
+console.log(result1); // 5
+console.log(typeof result1); // number
+
+const result2 = undefined + 5;
+console.log(result2); // NaN
+console.log(typeof result2); // number
+```
+
+## Operator Precedence
+
+Operator precedence determines the order in which operations are evaluated in an expression. Operators with higher precedence are evaluated before those with lower precedence.
+
+It follows the PEMDAS rule where, parenthesis, exponents, multiplication, division, addition, and subtraction.
+
+Associativity is what tells JavaScript whether to evaluate operators from left to right or right to left. For most operators like addition and multiplication, associativity is left to right. So, JavaScript processes these from the leftmost side of the expression to the right:
+
+```js
+const result = 10 - 2 + 3;
+
+console.log(result); // 11
+```
+
+The exponent operator is also right-to-left associative:
+
+```js
+const result = 2 ** 3 ** 2;
+
+console.log(result); // 512
+```
+
+## Increment and Decrement Operators
+
+The increment and decrement operators are represented by `++` and `--`, respectively. They both allow you to adjust the value of a variable by `1`.
+
+They come in two forms, prefix and postfix, with the difference being when the value gets updated. For the increment operator, prefix is `++x` and postfix is `x++`.
+
+Prefix (`++x`) increases the value of the variable first, then returns a new value. Postfix (`x++`) returns the current value of the variable first, then increases it:
+
+```js
+let x = 5;
+
+console.log(++x); // 6
+console.log(x); // 6
+```
+
+Postfix:
+
+```js
+let y = 5;
+
+console.log(y++); // 5
+console.log(y); // 6
+```
+
+## Compound Assignment Operators in JavaScript
+
+ Compound assignment operators provide a concise shorthand for an operation on a variable followed by storing the result in that same variable. They combine the operation and assignment into a shorter form like `x += y`, which is equivalent to writing `x = x + y` but without repeating the variable name.
+ 
+```js
+let num = 5;
+num += 2;
+
+console.log(num); // 7
+```
+
+## Booleans 
+
+Booleans are a data type with only `true` and `false` values.
+
+You can use the `Boolean()` function to check the truthiness of a value. For example, `Boolean("Hello World!")` will return `true` because `"Hello World!"` is truthy.
+
+```js
+let isOldEnoughToDrive = true;
+
+if (isOldEnoughToDrive) {
+ console.log("You're old enough to drive"); // You're old enough to drive
+} else {
+ console.log("Sorry, you are not old enough to drive");
+}
+```
+
+To compare two values, you can use either the equality or strict equality operator. The result of the comparison will be a boolean of either `true` or `false`.
+
+```js
+console.log(5 == "5"); // true
+```
+
+In this example, JavaScript converts the string `"5"` into the number `5` and then checks if they are equal. Since both values are now the same, the result is true. The equality operator uses type coercion before checking if each value is equal.
+
+This differs from the strict equality operator, which does not perform type coercion. The strict equality operator will check if the types are the same and if the values are the same. Here is an example using the strict equality operator to compare a number and string. This operator is represented by a triple equals sign (`===`).
+
+```js
+console.log(5 === '5'); // false
+```
+
+The following comparison will be `false`, because a string data type is not the same as a number data type.
+
+If you need to check if something is not equal to another value, then you can use the inequality or strict inequality operators. Here is an example of using the inequality operator (`!=`) to compare a number with a string.
+
+```js
+console.log(5 != "5"); // false
+```
+
+In this example, the result would be `false` because the inequality operator first converts the string value to a number and then compares the values. Since the values would be the same it will return `false`. If you tried to use the strict inequality operator, then you would get a different result. The strict inequality operator is represented by an exclamation mark followed by two equal signs (`!==`).
+
+```js
+console.log(5 !== "5"); // true
+```
+
+The result would be `true` because the strict inequality operator does not perform any type coercion. Since the number `5` is not equal to the string `"5"`, then the result is `true`.
+
+## Comparison Operators
+
+Comparison operators allow you to compare two values and return a `true` or `false` result.
+
+The greater than operator, represented by a right-angle bracket (`>`), checks if the value on the left is greater than the one on the right:
+
+```js
+let a = 6;
+let b = 9;
+
+console.log(a > b); // false
+console.log(b > a); // true
+```
+
+The greater than or equal operator, represented by a right-angle bracket and the equals sign (`>=`), checks if the value on the left is either greater than or equal to the one on the right:
+
+```js
+let a = 6;
+let b = 9;
+let c = 6;
+
+console.log(a >= b); // false
+console.log(b >= a); // true
+console.log(a >= c); // true
+```
+
+The lesser than operator, represented by a left-angle bracket (`<`) works similarly to `>`, but in reverse. It checks if the value on the left is smaller than the one on the right:
+
+```js
+let a = 6;
+let b = 9;
+
+console.log(a < b); // true
+console.log(b < a); // false
+```
+
+The less than or equal operator, represented by a left-angle bracket and the equals sign (`<=`) checks if the value on the left is smaller than or equal to the one on the right:
+
+```js
+let a = 6;
+let b = 9;
+let c = 6;
+
+console.log(a <= b); // true
+console.log(b <= a); // false
+console.log(a <= c); // true
+```
+
+## Unary Operators
+
+Unary operators act on a single operand to perform operations like type conversion, value manipulation, or checking certain conditions.
+
+The unary plus operator converts its operand into a number. If the operand is already a number, it remains unchanged.
+
+```js
+const str = '42';
+const strToNum = +str;
+
+console.log(strToNum); // 42
+console.log(typeof str); // string
+console.log(typeof strToNum); // number
+```
+
+Unary plus is handy when you want to make sure you're working with a numeric value. As you might guess, there's a unary negation operator. It negates the value of the operand. It works similarly to the unary plus, except it flips the sign.
+
+```js
+const str = '42';
+const strToNegativeNum = -str;
+
+console.log(strToNegativeNum); // -42
+console.log(typeof str); // string
+console.log(typeof strToNegativeNum); // number
+```
+
+The logical NOT operator, represented by an exclamation mark (`!`), is another unary operator. It flips the boolean value of its operand. So, if the operand is `true`, it becomes `false`, and if it's `false`, it becomes `true`. 
+
+```js
+let isOnline = true;
+console.log(!isOnline); // false
+
+let isOffline = false;
+console.log(!isOffline); // true
+```
+
+The bitwise NOT operator is a less commonly used unary operator. Represented by a tilde, `~`, it inverts the binary representation of a number. Computers store numbers in binary format (1s and 0s). The `~` operator flips every bit, meaning it changes all 1s to 0s and all 0s to 1s.
+
+```js
+const num = 5; // The binary for 5 is 00000101
+
+console.log(~num); // -6
+```
+
+The `void` keyword is a unary operator that evaluates an expression and returns `undefined`.
+
+```js
+const result = void (2 + 2);
+
+console.log(result); // undefined
+```
+
+`void` is also commonly used in hyperlinks to prevent navigation:
+
+```js
+<a href="javascript:void(0);">Click Me</a>
+```
+
+The `void` keyword is a unary operator that evaluates an expression and returns `undefined`.
+
+```js
+const result = void (2 + 2);
+
+console.log(result); // undefined
+```
+
+`void` is also commonly used in hyperlinks to prevent navigation:
+
+```js
+<a href="javascript:void(0);">Click Me</a>
+```
+
+## Bitwise Operators
+
+Bitwise operators in JavaScript are special operators that work on the binary representations of numbers.
