@@ -921,3 +921,246 @@ console.log(result); // undefined
 ## Bitwise Operators
 
 Bitwise operators in JavaScript are special operators that work on the binary representations of numbers.
+
+ JavaScript provides several bitwise operators, including AND (`&`), OR (`|`), XOR (`^`), NOT (`~`), left shift (`<<`), and right shift (`>>`).
+
+The bitwise AND (`&`) operator returns a `1` in each bit position for which the corresponding bits of both operands are `1`. Here's an example:
+
+```js
+let a = 5;  // Binary: 101
+let b = 3;  // Binary: 011
+console.log(a & b);  // 1 (Binary: 001)
+```
+ 
+The bitwise OR (`|`) operator returns a `1` in each bit position for which the corresponding bits of either or both operands are `1`. For example:
+
+```js
+let a = 5;  // Binary: 101
+let b = 3;  // Binary: 011
+console.log(a | b);  // 7 (Binary: 111)
+```
+
+The bitwise XOR (`^`) operator returns a `1` in each bit position for which the corresponding bits of either, but not both, operands are `1`. For instance:
+
+```js
+let a = 5;  // Binary: 101
+let b = 3;  // Binary: 011
+console.log(a ^ b);  // 6 (Binary: 110)
+```
+
+The bitwise NOT (`~`) operator inverts all the bits of its operand. For example:
+
+```js
+let a = 5;  // Binary: 101
+console.log(~a);  // -6
+```
+
+The left shift (`<<`) operator shifts all bits to the left by a specified number of positions. For example:
+
+```js
+let a = 5;  // Binary: 101
+console.log(a << 1);  // 10 (Binary: 1010)
+```
+
+The right shift (`>>`) operator shifts all bits to the right. For example:
+
+```js
+let a = 5;  // Binary: 101
+console.log(a >> 1);  // 2 (Binary: 10)
+```
+
+## Conditional Statements
+
+Conditional statements let you make decisions in your JavaScript code. They allow your program to flow in a particular way based on certain conditions.
+
+An `if` statement takes a condition and runs a block of code if that condition is truthy. Truthy values are any values that result in `true` when evaluated in a Boolean context like an `if` statement. Here are examples of truthy values:
+
+- non-empty strings, for example, `hello`
+    
+- any number other than `0` and `-0`, for example, `4`, `-5`, and others
+    
+- arrays
+    
+- objects
+    
+- the boolean `true`
+On the other hand, falsy values are values that evaluate to `false` in a boolean context. JavaScript has few falsy values, which makes them easy to remember. Here are a few falsy values:
+
+- boolean `false`
+    
+- `0` (zero)
+    
+- `""` (empty string)
+    
+- `null`
+    
+- `undefined`
+    
+- `NaN` (Not a Number)
+
+Now, that we have a basic understanding of truthy and falsy values, let's see how it works with `if` statements. In this first example, we are using a couple of `if` statements to check against truthy and falsy values:
+
+```js
+if (null) {
+  console.log("This will not run.");
+}
+
+if ("freeCodeCamp") {
+  console.log("This will run.");
+}
+```
+
+When a condition is `false`, then you can use an `else` clause:
+
+```js
+const age = 15;
+
+if (age >= 18) {
+ console.log("You're eligible to vote");
+} else {
+ console.log("You're not eligible to vote"); // You're not eligible to vote
+}
+```
+
+If you want to check multiple conditions, you can use an `else if` block. This allows your program to choose between more than two paths.
+
+```js
+const score = 87;
+
+if (score >= 90) {
+ console.log('You got an A'); 
+} else if (score >= 80) {
+ console.log('You got a B'); // You got a B
+} else if (score >= 70) {
+ console.log('You got a C');
+} else {
+ console.log('You failed! You need to study more!');
+}
+```
+
+The ternary operator is a compact way to write simple `if/else` statements. It has three parts: a condition, a result if the condition is true, and a result if it is false. Here's the basic syntax:
+
+```js
+condition ? expressionIfTrue : expressionIfFalse;
+```
+
+```js
+const temperature = 30;
+const weather = temperature > 25 ? 'sunny' : 'cool';
+
+console.log(`It's a ${weather} day!`);
+```
+
+## Binary Logical Operators
+
+Binary logical operators help you evaluate two expressions and return a result based on their truthiness.  Logical AND, logical OR, and the nullish coalescing operator.
+
+The logical AND operator is represented by a double ampersand (`&&`). It checks if both operands are true and returns a result. If both operands are truthy, it returns the second value, that is, the one on the right:
+
+```js
+const result = true && 'hello';
+
+console.log(result); // hello
+```
+
+The logical OR operator checks if at least one of the operands is truthy. If the first operand is truthy, it returns that value:
+
+```js
+const result = 'This is truthy' || false;
+
+console.log(result); // This is truthy
+```
+
+The nullish coalescing operator is more sophisticated than logical OR and logical AND. Represented by a double question mark (`??`), it helps in scenarios where you want to return a value only if the first one is `null` or `undefined`.
+
+```ts
+const result = null ?? 'default';
+
+console.log(result); // default
+```
+
+Since `null` is a nullish value, the string `default` would be logged to the console. The nullish coalescing operator is incredibly useful in situations where `null` or `undefined` are the only values that should trigger a fallback or default value. Here is an example of dealing with a user's preference settings:
+
+```ts
+const userSettings = {
+ theme: null,
+ volume: 0,
+ notifications: false,
+};
+
+let theme = userSettings.theme ?? 'light';
+console.log(theme); // light
+```
+
+## Math Object
+
+ While basic arithmetic operators can handle simple calculations, JavaScript offers a built-in `Math` object to tackle more complex math challenges.
+
+This handy tool provides a variety of methods that make it easier to perform advanced calculations and manipulate numbers.
+
+The `Math.random()` method generates a random floating-point number between `0` (inclusive) and `1` (exclusive). This means the possible output can be `0`, but it will never actually reach `1`. Here is an example working with the `Math.random()` method:
+
+```js
+const randomNum = Math.random();
+
+console.log(randomNum);
+// any number between 0 and 1 – 0 inclusive and 1 exclusive
+```
+
+`Math.min()` and `Math.max()` both take a set of numbers and return the minimum and maximum value, respectively. Here is an example of working both of those methods:
+
+```js
+const smallest = Math.min(1, 5, 3, 9);
+console.log(smallest); // 1
+
+const largest = Math.max(1, 5, 3, 9);
+console.log(largest); // 9
+```
+
+If you wanted to round numbers up or down to the nearest whole integer, you could use the `Math.ceil()` and `Math.floor()` methods. Here is an example of working with `Math.ceil()`:
+
+```js
+console.log(Math.ceil(4.3)); // 5
+```
+
+`Math.round()` is the hybrid of `Math.ceil()` and `Math.floor()`. It rounds a number to its nearest integer, taking the decimal point into account:
+
+```js
+console.log(Math.round(2.3)); // 2
+console.log(Math.round(4.5)); // 5
+console.log(Math.round(4.8)); // 5
+```
+
+Generating a random number between `20` and `1` would look like this:
+
+```js
+const randomNumBtw1And20 = Math.floor(Math.random() * 20) + 1;
+console.log(randomNumBtw1And20);
+```
+
+Another helpful `Math` method would be the `Math.trunc()` method. `Math.trunc()` removes the decimal part of a number, returning only the integer portion, without rounding:
+
+```js
+console.log(Math.trunc(2.9)); // 2
+console.log(Math.trunc(9.1)); // 9
+```
+
+If you need to get the square root or cube root of a number, you can use the `Math.sqrt()` and `Math.cbrt()` methods, respectively:
+
+```js
+console.log(Math.sqrt(81)); // 9
+console.log(Math.cbrt(27)); // 3
+```
+
+ If you need to get the absolute value of a number, you can use the `Math.abs()` method:
+
+```js
+console.log(Math.abs(-5)); // 5
+console.log(Math.abs(5)); // 5
+```
+
+`Math.pow()` takes two numbers and raise the first to the power of the second.
+
+- **The `parseFloat()` Method**: This method parses a string argument and returns a floating-point number. It's designed to extract a number from the beginning of a string, even if the string contains non-numeric characters later on.
+- **The `parseInt()` Method**: This method parses a string argument and returns an integer. `parseInt()` stops parsing at the first non-digit it encounters. For floating-point numbers, it returns only the integer part. If it can't find a valid integer at the start of the string, it returns `NaN`.
+- **The `toFixed()` Method**: This method is called on a number and takes one optional argument, which is the number of digits to appear after the decimal point. It returns a string representation of the number with the specified number of decimal places.
