@@ -1164,3 +1164,79 @@ console.log(Math.abs(5)); // 5
 - **The `parseFloat()` Method**: This method parses a string argument and returns a floating-point number. It's designed to extract a number from the beginning of a string, even if the string contains non-numeric characters later on.
 - **The `parseInt()` Method**: This method parses a string argument and returns an integer. `parseInt()` stops parsing at the first non-digit it encounters. For floating-point numbers, it returns only the integer part. If it can't find a valid integer at the start of the string, it returns `NaN`.
 - **The `toFixed()` Method**: This method is called on a number and takes one optional argument, which is the number of digits to appear after the decimal point. It returns a string representation of the number with the specified number of decimal places.
+
+# Functions
+
+Tags: #Functions #FunctionsofStringsinJavaScript 
+
+------
+
+**Functions** are reusable pieces of code that perform a specific task or calculate a value. Think of functions as a machine that takes some input, does some operations on it, and then produces an output.
+
+```js
+function greet() {
+  console.log("Hello, Jessica!");
+}
+```
+
+## Parameters and Arguments
+
+**Parameters** act as placeholders for the values that will be passed to the function when it is called. They allow functions to accept input and work with that input. **Arguments** are the actual values passed to the function when it is called.
+
+```js
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+
+greet("Alice"); // Hello, Alice!
+greet("Nick"); // Hello, Nick!
+```
+
+## Return Values
+
+When a function finishes its execution, it will always return a value. By default, the return value will be `undefined`. Here is an example:
+
+```js
+function doSomething() {
+  console.log("Doing something...");
+}
+
+let result = doSomething();
+console.log(result); // undefined
+```
+
+If you need your function to return a specific value, then you will need to use the `return` statement. Here is an example of using a `return` statement to return the sum of two values:
+
+```js
+function calculateSum(num1, num2) {
+  return num1 + num2;
+}
+
+console.log(calculateSum(3, 4)); // 7
+```
+
+## Anonymous Function
+
+ An anonymous function is a function without a name that can be assigned to a variable like this:
+
+```js
+const sum = function (num1, num2) {
+  return num1 + num2;
+};
+
+console.log(sum(3, 4)); // 7
+```
+
+## Default Parameters
+
+Functions support default parameters, allowing you to set default values for parameters. These default values are used if the function is called without an argument for that parameter.
+
+```js
+function greetings(name = "Guest") {
+  console.log("Hello, " + name + "!");
+}
+
+greetings(); // Hello, Guest!
+greetings("Anna"); // Hello, Anna!
+```
+
