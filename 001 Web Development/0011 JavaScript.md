@@ -1240,3 +1240,75 @@ greetings(); // Hello, Guest!
 greetings("Anna"); // Hello, Anna!
 ```
 
+## Arrow Functions
+
+Another way to write functions in JavaScript is to create an arrow function expression. Here is how you can refactor the previous example to use arrow function syntax instead:
+
+```js
+const greetings = (name) => {
+  console.log("Hello, " + name + "!");
+};
+```
+
+ If your parameter list only has one parameter in it, then you can remove the parentheses like this:
+
+```js
+const greetings = name => {
+  console.log("Hello, " + name + "!");
+};
+```
+
+If your arrow function has no parameters, then you must use the parentheses like this:
+
+```js
+const greetings = () => {
+  console.log("Hello");
+};
+```
+
+If your function body only contains a single ling of code, you can remove the curly braces like this:
+
+```js
+const greetings = name => console.log("Hello, " + name + "!");
+```
+
+Another key concept is the `return` statement. Here is an example of using the arrow function syntax to calculate the area:
+
+```js
+const calculateArea = (width, height) => {
+  const area = width * height;
+  return area;
+};
+
+console.log(calculateArea(5, 3)); // 15
+```
+
+It actually depends on the developer whether they will use the usual function or arrow functions.
+
+## Scopes
+
+Scope in programming refers to the visibility and accessibility of variables in different parts of your code. It determines where variables can be accessed or modified. In JavaScript, understanding scope is crucial for writing clean, efficient, and bug-free code. There are three main types of scope: global scope, local scope, and block scope.
+
+Global scope is the outermost scope in a JavaScript program. Variables declared in the global scope are accessible from anywhere in your code, including within functions and blocks. These variables are often called global variables. While global variables can be convenient, they should be used sparingly as they can lead to naming conflicts and make your code harder to maintain. Here's an example of a global variable:
+
+```js
+let globalVar = "I'm a global variable";
+
+function printGlobalVar() {
+    console.log(globalVar);
+}
+
+printGlobalVar(); // "I'm a global variable"
+```
+
+Local scope, on the other hand, refers to variables that are only accessible within a function. Here's an example of local scope:
+
+```js
+function greet() {
+    let message = "Hello, local scope!";
+    console.log(message);
+}
+
+greet(); // "Hello, local scope!"
+// console.log(message); // This will throw an error
+```
